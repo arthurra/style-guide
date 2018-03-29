@@ -1,11 +1,13 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
+var autoprefixer= require('gulp-autoprefixer');
 
 // Compile styles
 gulp.task('styles', function () {
   gulp.src('./scss/main.scss')
     .pipe(sass())
+    .pipe(autoprefixer())
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 });
