@@ -1,2 +1,2 @@
 # style-guide
-A base style guide of ui elements for starting new projects.
+A base style guide of UI elements for starting new projects.

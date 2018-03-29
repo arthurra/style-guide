@@ -1,0 +1,17 @@
+{
+  "name": "style-guide",
+  "version": "1.0.0",
+  "author": "Ryan Arthur",
+  "homepage": "",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:arthurra/style-guide.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
+  }
+}
