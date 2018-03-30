@@ -2,7 +2,7 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var autoprefixer= require('gulp-autoprefixer');
-var sourcemaps= require('gulp-sourcemaps');
+var sourcemaps  = require('gulp-sourcemaps');
 
 // Compile styles
 gulp.task('styles', function () {
