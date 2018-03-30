@@ -2,12 +2,15 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var autoprefixer= require('gulp-autoprefixer');
+var sourcemaps= require('gulp-sourcemaps');
 
 // Compile styles
 gulp.task('styles', function () {
   return gulp.src('src/styles/main.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('build/stylesheets'))
     .pipe(browserSync.stream());
 });
