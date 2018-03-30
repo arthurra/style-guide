@@ -5,10 +5,16 @@ var autoprefixer= require('gulp-autoprefixer');
 
 // Compile styles
 gulp.task('styles', function () {
-  gulp.src('./scss/main.scss')
-    .pipe(sass())
+  return gulp.src('src/styles/main.scss')
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('build/stylesheets'))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('html', function () {
+  return gulp.src('src/**/*.html')
+    .pipe(gulp.dest('build'))
     .pipe(browserSync.stream());
 });
 
@@ -16,12 +22,12 @@ gulp.task('styles', function () {
 gulp.task('serve', function () {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "build"
     }
   });
 
-  gulp.watch('./scss/*.scss', ['styles']);
-  gulp.watch('./**/*.html').on('change', browserSync.reload);
+  gulp.watch('src/styles/**/*.scss', ['styles']);
+  gulp.watch('src/**/*.html', ['html']);
 });
 
-gulp.task('default', ['styles', 'serve']);
+gulp.task('default', ['html', 'styles', 'serve']);
