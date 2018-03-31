@@ -45,4 +45,62 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,900"); }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smooquarterg: subpixel-antialiased;
+  -moz-osx-font-smooquarterg: grayscale;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  -webkit-font-kerning: normal;
+          font-kerning: normal; }
+
+body {
+  padding: 1rem; }
+
+h1 {
+  font: normal normal 900 1.75rem/1.572 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1.25rem;
+  padding-top: 1rem; }
+
+h2 {
+  font: normal normal 400 1.375rem/2.182 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1rem;
+  padding-top: 1rem; }
+
+h3 {
+  font: normal normal 700 0.875rem/2.575 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  padding-top: 1rem; }
+
+h4 {
+  font: italic normal 300 1rem/2.25 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem; }
+
+h5 {
+  font: normal normal 700 0.75rem/1.667 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.5rem;
+  padding: 0.625rem 0 0.125rem; }
+
+h6 {
+  font: italic normal 400 0.75rem/1.667 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.5rem;
+  padding: calc(0.5rem + 1px) 0 calc(0.25rem - 1px); }
+
+p {
+  font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: -1px;
+  margin-bottom: 1rem;
+  padding-bottom: 1px; }
+
 /*# sourceMappingURL=maps/main.css.map */

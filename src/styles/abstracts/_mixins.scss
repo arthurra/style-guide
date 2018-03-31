@@ -1,0 +1,7 @@
+@mixin grid-lines {
+  background-image: linear-gradient(to bottom, gray 0%, transparent 1px, transparent 100%);
+  background-size: 100% 8px;
+  background-position: top;
+  background-position-y: -1px;
+  background-repeat: repeat-y;
+}

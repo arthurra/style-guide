@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: $p;
+  font-size: $base-font-size;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smooquarterg: subpixel-antialiased;
+  -moz-osx-font-smooquarterg: grayscale;
+  font-variant-ligatures: common-ligatures;
+  font-kerning: normal;
+}
+
+body {
+  // @include grid-lines;
+  padding: $padding;
+}

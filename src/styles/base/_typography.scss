@@ -1,0 +1,43 @@
+h1 {
+  font: $h1;
+  margin-bottom: $padding + $quarter-padding;
+  padding-top: $padding;
+}
+
+h2 {
+  font: $h2;
+  margin-bottom: $padding;
+  padding-top: $padding;
+}
+
+h3 {
+  font: $h3;
+  text-transform: uppercase;
+  margin-bottom: $half-padding + $quarter-padding;
+  padding-top: $padding;
+}
+
+h4 {
+  font: $h4;
+  margin-bottom: $half-padding + $quarter-padding;
+  padding-top: $half-padding
+}
+
+h5 {
+  font: $h5;
+  margin-bottom: $half-padding;
+  padding: ($half-padding + ($quarter-padding / 2)) 0 ($quarter-padding / 2);
+}
+
+h6 {
+  font: $h6;
+  margin-bottom: $half-padding;
+  padding: calc(#{$half-padding} + 1px) 0 calc(#{$quarter-padding} - 1px);
+}
+
+p {
+  font: $p;
+  margin-top: -1px;
+  margin-bottom: $padding;
+  padding-bottom: 1px;
+}
