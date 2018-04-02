@@ -22,6 +22,7 @@ a {
   color: $link-color;
   text-decoration: none;
   position: relative;
+  transition: color $transition-duration $smooth-ease;
 
   &:hover {
     color: $color-primary;

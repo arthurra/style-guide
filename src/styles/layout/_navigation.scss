@@ -1,0 +1,19 @@
+nav {
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: calc(3rem - 1px);
+  align-items: center;
+  font: $p;
+
+  a {
+    padding: 0 $padding;
+    line-height: calc(3rem - 1px);
+
+    & + a {
+      border-top: $border;
+    }
+  }
+}
