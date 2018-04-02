@@ -61,7 +61,8 @@ html {
   -webkit-font-variant-ligatures: common-ligatures;
           font-variant-ligatures: common-ligatures;
   -webkit-font-kerning: normal;
-          font-kerning: normal; }
+          font-kerning: normal;
+  color: #37474F; }
 
 body {
   padding: 1rem; }
@@ -102,6 +103,6 @@ p {
   margin-top: -1px;
   margin-bottom: 1rem;
   padding-bottom: 1px;
-  color: dimgray; }
+  color: #5A6779; }
 
 /*# sourceMappingURL=maps/main.css.map */
