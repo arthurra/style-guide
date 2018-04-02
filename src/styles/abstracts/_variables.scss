@@ -1,6 +1,45 @@
 // ---------------------------------- \\
+//              COLORS                \\
+// ---------------------------------- \\
+
+$black: #37474F;
+$darker-gray: #5A6779;
+$dark-gray: #78909C;
+$gray: #CFD8DC;
+$light-gray: #EAECEF;
+$lighter-gray: #F5F5F5;
+
+$sg-pink: #FF7A67;
+$sg-fuchsia: #CC74B7;
+$sg-purple: #977FD2;
+$sg-blue: #4f9fcf;
+$sg-navy: #2f6f9f;
+$sg-aqua: #00C9BC;
+$sg-teal: #099;
+$sg-green: #39C46C;
+$sg-chartreuse: #80C80A;
+$sg-yellow: #fdbb37;
+$sg-orange: #E87E4B;
+$sg-red: #D63A3A;
+
+$color-danger: $sg-red;
+$color-warning: $sg-yellow;
+$color-success: $sg-green;
+$color-info: $sg-blue;
+
+$color-primary: $sg-navy;
+$color-secondary: $sg-blue;
+
+$input-background-color: #FCFCFC;
+
+
+// ---------------------------------- \\
 //             TYPOGRAPHY             \\
 // ---------------------------------- \\
+
+$text-color: $black;
+$light-text-color: $dark-gray;
+$link-color: $color-primary;
 
 $base-font-size: 16px;
 
