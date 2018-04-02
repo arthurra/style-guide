@@ -118,4 +118,19 @@ p {
   padding-bottom: 1px;
   color: #5A6779; }
 
+body {
+  display: grid;
+  grid-template-columns: minmax(16em, 1fr) 4fr;
+  grid-template-rows: 8em 1fr;
+  grid-template-areas: "header   header" "sidebar  main"; }
+
+header {
+  grid-area: header; }
+
+aside {
+  grid-area: sidebar; }
+
+main {
+  grid-area: main; }
+
 /*# sourceMappingURL=maps/main.css.map */
