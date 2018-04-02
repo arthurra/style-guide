@@ -17,3 +17,14 @@ body {
   // @include grid-lines;
   padding: $padding;
 }
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+}

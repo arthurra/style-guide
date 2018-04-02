@@ -67,6 +67,14 @@ html {
 body {
   padding: 1rem; }
 
+a {
+  color: #2c97de;
+  text-decoration: none;
+  position: relative; }
+  a:hover {
+    color: #2f6f9f;
+    text-decoration: underline; }
+
 h1 {
   font: normal normal 900 1.75rem/1.572 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1.25rem;
