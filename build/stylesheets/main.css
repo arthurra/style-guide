@@ -91,6 +91,13 @@ section {
     border-top: 1px solid #CFD8DC;
     margin-top: -1px; }
 
+code {
+  border: 1px solid #CFD8DC;
+  background-color: #F5F5F5;
+  padding: 0.125rem 0.25rem;
+  border-radius: 2px;
+  font-family: monospace; }
+
 h1 {
   font: normal normal 900 1.75rem/1.572 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1.25rem;

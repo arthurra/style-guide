@@ -45,3 +45,11 @@ section {
     margin-top: -1px;
   }
 }
+
+code {
+  border: $border;
+  background-color: $lighter-gray;
+  padding: ($quarter-padding / 2) $quarter-padding;
+  border-radius: $border-radius;
+  font-family: monospace;
+}
