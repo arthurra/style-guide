@@ -18,10 +18,14 @@ aside {
 
 main {
   grid-area: main;
+  justify-self: center;
+  max-width: 50em;
 }
 
 .grid-columns {
   display: grid;
-  grid-auto-flow: column;
+  // grid-auto-flow: column;
+  // grid-auto-columns: auto-fill;
+  grid-template-columns: repeat( 4, 1fr );
   grid-gap: $padding;
 }

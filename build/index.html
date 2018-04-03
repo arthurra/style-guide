@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../stylesheets/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   <title> Style Guide </title>
+
+  <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-DtPgXIYsUR6lLmJK14ZNUi11aAoezQtw4ut26Zwy9/6QXHH8W3+gjrRDT+lHiiW4" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -56,7 +57,187 @@
       <h2> Forms </h2>
       <p>Forms are made up of three main components - a <code>form</code> element, form controls (text inputs, checkboxes, radio buttons), and form actions that include a submit button and sometimes a cancel button.</p>
       <p>The buttons for sumbitting and canceling a form are wrapped in a <code>.form-actions</code> container.</p>
-      <h3> Basic Text Inputs </h3>
+
+      <h3> Text Inputs </h3>
+      <div class="grid-columns">
+        <!-- BASIC -->
+        <div class="form-group">
+          <input class="form-input" type="text" name="" value="" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <input class="form-input form-input--icon" type="text" name="" value="" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input required" type="text" name="" value="" placeholder="Text input" required>
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input form-input--icon required" type="text" name="" value="" placeholder="Text input" required>
+        </div>
+
+        <!-- HOVER -->
+        <div class="form-group">
+          <input class="form-input form-input--hover" type="text" name="" value="" placeholder="Hover text input">
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <input class="form-input form-input--icon form-input--hover" type="text" name="" value="" placeholder="Hover text input">
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input form-input--hover required" type="text" name="" value="" placeholder="Hover text input" required>
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input form-input--icon form-input--hover required" type="text" name="" value="" placeholder="Hover text input" required>
+        </div>
+
+        <!-- FOCUS -->
+        <div class="form-group">
+          <input class="form-input form-input--focus" type="text" name="" value="" placeholder="Focus text input">
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <input class="form-input form-input--icon form-input--focus" type="text" name="" value="" placeholder="Focus text input">
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input form-input--focus required" type="text" name="" value="" placeholder="Focus text input" required>
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input form-input--icon form-input--focus required" type="text" name="" value="" placeholder="Focus text input" required>
+        </div>
+
+        <!-- VALUE -->
+        <div class="form-group">
+          <input class="form-input" type="text" name="" value="Text in here" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <input class="form-input form-input--icon" type="text" name="" value="Text in here" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--append form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input required" type="text" name="" value="Text in here" placeholder="Text input" required>
+        </div>
+        <div class="form-group">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-input-icon form-input-icon--append form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input form-input--icon required" type="text" name="" value="Text in here" placeholder="Text input" required>
+        </div>
+
+        <!-- STATES -->
+        <div class="form-group form-group--info">
+          <input class="form-input" type="text" name="" value="" placeholder="Info text input">
+        </div>
+        <div class="form-group form-group--warning">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <input class="form-input form-input--icon" type="text" name="" value="" placeholder="Warning text input">
+        </div>
+        <div class="form-group form-group--danger">
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input required" type="text" name="" value="" placeholder="Danger text input" required>
+        </div>
+        <div class="form-group form-group--success">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input form-input--icon required" type="text" name="" value="" placeholder="Success text input" required>
+        </div>
+
+        <!-- DISABLED -->
+        <div class="form-group form-group--disabled">
+          <input class="form-input" type="text" name="" value="" placeholder="Disabled text input" disabled>
+        </div>
+        <div class="form-group form-group--disabled">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <input class="form-input form-input--icon" type="text" name="" value="" placeholder="Disabled text input" disabled>
+        </div>
+        <div class="form-group form-group--disabled">
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input required" type="text" name="" value="" placeholder="Disabled text input" required disabled>
+        </div>
+        <div class="form-group form-group--disabled">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input class="form-input form-input--icon required" type="text" name="" value="" placeholder="Disabled text input" required disabled>
+        </div>
+
+        <!-- READ ONLY -->
+        <div class="form-group form-group--readonly">
+          <input class="form-input" type="text" name="" value="Read only text input" placeholder="" readonly>
+        </div>
+        <div class="form-group form-group--readonly">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <input class="form-input form-input--icon" type="text" name="" value="Read only text input" placeholder="" readonly>
+        </div>
+        <div class="form-group form-group--readonly">
+          <input class="form-input" type="text" name="" value="Read only text input" placeholder="" readonly>
+        </div>
+        <div class="form-group form-group--readonly">
+          <div class="form-input-icon form-input-icon--prepend">
+            <i class="far fa-user-alt"></i>
+          </div>
+          <input class="form-input form-input--icon" type="text" name="" value="Read only text input" placeholder="" readonly>
+        </div>
+      </div>
+
+      <h3> With Labels </h3>
       <div class="grid-columns">
         <div class="form-group">
           <label for="input1"> Label </label>
@@ -75,6 +256,8 @@
           <input id="input4" class="form-input disabled" type="text" name="" value="" placeholder="Disabled text input" disabled>
         </div>
       </div>
+
+      <h3> </h3>
     </section>
   </main>
   <footer></footer>
