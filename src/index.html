@@ -239,21 +239,68 @@
 
       <h3> With Labels </h3>
       <div class="grid-columns">
+        <!-- BASIC -->
         <div class="form-group">
-          <label for="input1"> Label </label>
+          <label for="input1"> Input Label </label>
           <input id="input1" class="form-input" type="text" name="" value="" placeholder="Text input">
         </div>
         <div class="form-group">
-          <label for="input2"> Label </label>
-          <input id="input2" class="form-input form-input--focus" type="text" name="" value="" placeholder="Focused text input">
+          <label for="input2"> Input Label </label>
+          <input id="input2" class="form-input" type="text" name="" value="" placeholder="Text input">
         </div>
         <div class="form-group">
-          <label for="input3"> Label </label>
-          <input id="input3" class="form-input" type="text" name="" value="Text in here" placeholder="Text input">
+          <label for="input3"> Input Label </label>
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input id="input3" class="form-input" type="text" name="" value="" placeholder="Text input" required>
         </div>
         <div class="form-group">
-          <label for="input4"> Label </label>
-          <input id="input4" class="form-input disabled" type="text" name="" value="" placeholder="Disabled text input" disabled>
+          <label for="input4"> Input Label </label>
+          <div class="form-input-icon form-input-icon--append  form-input-icon--required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <input id="input4" class="form-input" type="text" name="" value="" placeholder="Text input" required>
+        </div>
+
+        <!-- HELP TEXT -->
+        <div class="form-group">
+          <label for="input1"> Input Label </label>
+          <input id="input5" class="form-input" type="text" name="" value="" placeholder="Text input" aria-describedby="help-block1">
+          <span id="help-block1" class="help-block">
+            <i class="far fa-info-circle"></i>
+            Help text.
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="input2"> Input Label </label>
+          <input id="input2" class="form-input" type="text" name="" value="" placeholder="Text input" aria-describedby="help-block2">
+          <span id="help-block2" class="help-block help-block--info">
+            <i class="far fa-info-circle"></i>
+            Help text.
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="input3"> Input Label </label>
+          <div class="form-input-icon form-input-icon--append  form-input-icon--success">
+            <i class="fas fa-check"></i>
+          </div>
+          <input id="input3" class="form-input" type="text" name="" value="lester@mctester.com" placeholder="Text input" required aria-describedby="help-block3">
+          <span id="help-block3" class="help-block help-block--success">
+            <i class="far fa-check-circle"></i>
+            Success.
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="input4"> Input Label </label>
+          <div class="form-input-icon form-input-icon--append  form-input-icon--danger">
+            <i class="fas fa-times"></i>
+          </div>
+          <input id="input4" class="form-input" type="text" name="" value="12345678" placeholder="Text input" required aria-describedby="help-block4">
+          <span id="help-block4" class="help-block help-block--danger">
+            <i class="far fa-times-circle"></i>
+            Invalid.
+          </span>
         </div>
       </div>
 
