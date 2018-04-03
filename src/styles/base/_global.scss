@@ -29,3 +29,19 @@ a {
     text-decoration: underline;
   }
 }
+
+label {
+  display: inline-block;
+  font: $label;
+  color: $darker-gray;
+  letter-spacing: 0.01em;
+}
+
+section {
+  padding-bottom: $padding;
+
+  & + & {
+    border-top: $border;
+    margin-top: -1px;
+  }
+}

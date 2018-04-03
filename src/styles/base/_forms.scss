@@ -1,0 +1,32 @@
+.form-group {
+
+}
+
+.form-input {
+  display: block;
+  min-width: 12rem;
+  height: 2rem;
+  padding: 0 $half-padding;
+  line-height: 2rem;
+  font: $p;
+  color: $text-color;
+  background-color: $input-background-color;
+  border: $border;
+  border-radius: $border-radius;
+  transition: all $golden-transition-duration $smooth-ease;
+
+  &:focus,
+  &.form-input--focus {
+    background-color: #fff;
+    border-color: $color-secondary;
+    box-shadow: 0 0 20px -5px $color-secondary;
+    outline: none;
+  }
+
+  &.disabled,
+  &[disabled] {
+    border: $dark-border;
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
+}

@@ -1,3 +1,6 @@
+.u-pt0 {
+  padding-top: 0; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -76,6 +79,18 @@ a {
     color: #2f6f9f;
     text-decoration: underline; }
 
+label {
+  display: inline-block;
+  font: normal normal 700 0.75rem/2 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #5A6779;
+  letter-spacing: 0.01em; }
+
+section {
+  padding-bottom: 1rem; }
+  section + section {
+    border-top: 1px solid #CFD8DC;
+    margin-top: -1px; }
+
 h1 {
   font: normal normal 900 1.75rem/1.572 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1.25rem;
@@ -119,6 +134,28 @@ p {
   padding-bottom: 1px;
   color: #5A6779; }
 
+.form-input {
+  display: block;
+  min-width: 12rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  line-height: 2rem;
+  font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #37474F;
+  background-color: #FCFCFC;
+  border: 1px solid #CFD8DC;
+  border-radius: 2px;
+  transition: all 0.1618s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  .form-input:focus, .form-input.form-input--focus {
+    background-color: #fff;
+    border-color: #2c97de;
+    box-shadow: 0 0 20px -5px #2c97de;
+    outline: none; }
+  .form-input.disabled, .form-input[disabled] {
+    border: 1px solid #78909C;
+    opacity: 0.25;
+    cursor: not-allowed; }
+
 body {
   display: grid;
   grid-template-columns: minmax(12em, 1fr) 4fr;
@@ -134,6 +171,11 @@ aside {
 
 main {
   grid-area: main; }
+
+.grid-columns {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem; }
 
 nav {
   border: 1px solid #CFD8DC;
