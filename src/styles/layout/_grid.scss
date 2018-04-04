@@ -27,5 +27,5 @@ main {
   // grid-auto-flow: column;
   // grid-auto-columns: auto-fill;
   grid-template-columns: repeat( 4, 1fr );
-  grid-gap: $padding;
+  grid-gap: 0 $padding;
 }

@@ -1,68 +1,112 @@
+// ---------------------------------- \\
+//             VARIABLES              \\
+// ---------------------------------- \\
+
 $input-height: $padding * 2;
-$help-text-height: $padding * 1.5;
+$label-height: $input-height * 0.75;
+$help-text-height: $label-height;
+
+
+// ---------------------------------- \\
+//              LAYOUT                \\
+// ---------------------------------- \\
+
+.form-group {
+  display: grid;
+  grid-template-rows: $label-height $input-height minmax($help-text-height, auto);
+  grid-template-columns: $input-height 1fr $input-height;
+  grid-template-areas:
+    "label label label"
+    "input-left-icon input input-right-icon"
+    "help-text help-text help-text";
+}
+
+.form-group__label {
+  grid-area: label;
+}
+
+.form-group__input {
+  grid-area: input-left-icon / input-left-icon / input-right-icon / input-right-icon;
+}
+
+.form-group__input-icon {
+  display: flex;
+}
+
+.form-group__input-icon--left {
+  grid-area: input-left-icon;
+}
+
+.form-group__input-icon--right {
+  grid-area: input-right-icon;
+}
+
+.form-group__help-block {
+  grid-area: help-text;
+}
+
+
+// ---------------------------------- \\
+//              DISPLAY               \\
+// ---------------------------------- \\
 
 .form-group {
   position: relative;
-  padding-bottom: $help-text-height;
-  margin-bottom: $padding;
+  margin-bottom: $half-padding;
 
   &--info {
-    .form-input {
+    .form-group__input {
       border-color: $color-info;
       background-color: lighten($color-info, 45%);
     }
 
-    .form-input-icon {
+    .form-group__input-icon {
       color: $color-info;
     }
   }
 
-
   &--warning {
-    .form-input {
+    .form-group__input {
       border-color: $color-warning;
       background-color: lighten($color-warning, 37%);
     }
 
-    .form-input-icon {
+    .form-group__input-icon {
       color: $color-warning;
     }
   }
 
 
   &--danger {
-    .form-input {
+    .form-group__input {
       border-color: $color-danger;
       background-color: lighten($color-danger, 45%);
     }
 
-    .form-input-icon {
+    .form-group__input-icon {
       color: $color-danger;
     }
   }
 
 
   &--success {
-    .form-input {
+    .form-group__input {
       border-color: $color-success;
       background-color: lighten($color-success, 45%);
     }
 
-    .form-input-icon {
+    .form-group__input-icon {
       color: $color-success;
     }
   }
 
-  &--disabled .form-input-icon {
+  &--disabled .form-group__input-icon {
     color: $gray;
   }
 }
 
-.form-input {
+.form-group__input {
   display: block;
-  min-width: 12rem;
-  width: 100%;
-  height: $input-height;
   padding: 0 $half-padding;
   line-height: $input-height;
   font: $p;
@@ -77,12 +121,12 @@ $help-text-height: $padding * 1.5;
   }
 
   &:hover,
-  &.form-input--hover {
+  &.form-group__input--hover {
     border-color: lighten($color-secondary, 20%);
   }
 
   &:focus,
-  &.form-input--focus {
+  &.form-group__input--focus {
     background-color: #fff;
     border-color: $color-secondary;
     box-shadow: 0 0 20px -5px $color-secondary;
@@ -107,87 +151,84 @@ $help-text-height: $padding * 1.5;
     }
   }
 
-  &--icon {
-    padding-left: $padding * 2;
+  &--icon-l {
+    padding-left: $input-height;
+  }
+
+  &--icon-r {
+    padding-right: $input-height;
+  }
+
+  &--icon-lr {
+    padding-left: $input-height;
+    padding-right: $input-height;
   }
 }
 
-.form-input-icon {
+.form-group__input-icon {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: $help-text-height;
-  width: $input-height;
-  height: $input-height;
   font-size: 0.8em;
   color: $light-text-color;
-}
 
-.form-input-icon--prepend {
-  left: 0;
-}
-
-.form-input-icon--append {
-  right: 0;
-}
-
-.form-input-icon--success {
-  color: $color-success;
-}
-
-.form-input-icon--danger {
-  color: $color-danger;
-}
-
-.form-input-icon--required {
-  font-size: 0.6em;
-  color: $color-secondary;
-
-  &:before {
-    display: block;
-    position: absolute;
-    top: -4px;
-    left: 50%;
-    content: "Required";
-    font-size: 1.2em;
-    color: #fff;
-    padding: $quarter-padding;
-    background-color: $black;
-    border-radius: $border-radius;
-    transform: translate(-50%, -100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: all $transition-duration $smooth-ease;
+  &--success {
+    color: $color-success;
   }
 
-  &:after {
-    position: absolute;
-    top: 4px;
-    left: 50%;
-    content: "";
-    width: 0;
-    height: 0;
-    border-width: 4px;
-    border-style: solid;
-    border-color: $black transparent transparent transparent;
-    transform: translate(-50%, -100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: all $transition-duration $smooth-ease;
+  &--danger {
+    color: $color-danger;
   }
 
-  &:hover {
-    &:before,
+  &--required {
+    color: $color-info;
+    font-size: 0.6em;
+
+    &:before {
+      display: block;
+      position: absolute;
+      top: -4px;
+      left: 50%;
+      content: "Required";
+      font-size: 1.2em;
+      color: #fff;
+      padding: $quarter-padding;
+      background-color: $black;
+      border-radius: $border-radius;
+      transform: translate(-50%, -100%);
+      opacity: 0;
+      pointer-events: none;
+      transition: all $transition-duration $smooth-ease;
+    }
+
     &:after {
-      opacity: 1;
+      position: absolute;
+      top: 4px;
+      left: 50%;
+      content: "";
+      width: 0;
+      height: 0;
+      border-width: 4px;
+      border-style: solid;
+      border-color: $black transparent transparent transparent;
+      transform: translate(-50%, -100%);
+      opacity: 0;
+      pointer-events: none;
+      transition: all $transition-duration $smooth-ease;
+    }
+
+    &:hover {
+      &:before,
+      &:after {
+        opacity: 1;
+      }
     }
   }
 }
 
-.help-block {
+.form-group__help-block {
   display: inline-block;
-  position: absolute;
   font: $h6;
   line-height: $help-text-height;
   color: $light-text-color;
