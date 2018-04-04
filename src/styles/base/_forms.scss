@@ -13,7 +13,7 @@ $help-text-height: $label-height;
 
 .form-group {
   display: grid;
-  grid-template-rows: $label-height $input-height minmax($help-text-height, auto);
+  grid-template-rows: auto $input-height auto;
   grid-template-columns: $input-height 1fr $input-height;
   grid-template-areas:
     "label label label"
@@ -88,7 +88,7 @@ $help-text-height: $label-height;
 
 .form-group {
   position: relative;
-  margin-bottom: $half-padding;
+  margin-bottom: $padding;
 
   &--info {
     .form-group__input {

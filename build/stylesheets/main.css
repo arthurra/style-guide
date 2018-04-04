@@ -142,7 +142,7 @@ p {
 
 .form-group {
   display: grid;
-  grid-template-rows: 1.5rem 2rem minmax(1.5rem, auto);
+  grid-template-rows: auto 2rem auto;
   grid-template-columns: 2rem 1fr 2rem;
   grid-template-areas: "label label label" "input-left-icon input input-right-icon" "help-text help-text help-text"; }
 
@@ -196,7 +196,7 @@ p {
 
 .form-group {
   position: relative;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 1rem; }
   .form-group--info .form-group__input {
     border-color: #2c97de;
     background-color: #f2f9fd; }
