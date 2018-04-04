@@ -31,6 +31,9 @@ $help-text-height: $label-height;
 
 .form-group__input-icon {
   display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-group__input-icon--left {
@@ -43,6 +46,39 @@ $help-text-height: $label-height;
 
 .form-group__help-block {
   grid-area: help-text;
+}
+
+.form-group--checkbox,
+.form-group--radio {
+  grid-template-rows: ($label-height - $half-padding) $input-height;
+  grid-template-columns: auto;
+  grid-auto-rows: $input-height;
+  grid-template-areas:
+    "label"
+    "checkbox";
+  grid-row-gap: $half-padding;
+  justify-content: start;
+
+  .form-group__input {
+    grid-area: auto;
+    display: grid;
+    grid-template-rows: $input-height;
+    grid-template-columns: $input-height auto;
+    grid-template-areas: "input label";
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.form-group__checkbox,
+.form-grou__radio {
+  grid-area: input;
+}
+
+.form-group__checkbox-label,
+.form-group__radio-label {
+  grid-area: label;
+  justify-self: start;
 }
 
 
@@ -116,6 +152,11 @@ $help-text-height: $label-height;
   border-radius: $border-radius;
   transition: all $golden-transition-duration $smooth-ease;
 
+  .form-group--checkbox &,
+  .form-group--radio & {
+    padding: 0 $half-padding 0 0;
+  }
+
   &::placeholder {
     color: $light-text-color;
   }
@@ -166,10 +207,6 @@ $help-text-height: $label-height;
 }
 
 .form-group__input-icon {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
   font-size: 0.8em;
   color: $light-text-color;
 
