@@ -340,10 +340,10 @@ p {
     box-shadow: 0 0 20px -5px #2c97de;
     outline: none; }
   .form-group__input.disabled, .form-group__input[disabled] {
-    background-color: #EAECEF;
-    border: 1px solid #78909C;
-    opacity: 0.25;
+    background-color: #F5F5F5;
     cursor: not-allowed; }
+    .form-group__input.disabled:hover, .form-group__input[disabled]:hover {
+      border: 1px solid #CFD8DC; }
   .form-group__input.readonly, .form-group__input[readonly] {
     background-color: transparent;
     border: none; }

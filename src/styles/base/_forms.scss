@@ -175,10 +175,12 @@ $help-text-height: $label-height;
 
   &.disabled,
   &[disabled] {
-    background-color: $light-gray;
-    border: $dark-border;
-    opacity: 0.25;
+    background-color: $lighter-gray;
     cursor: not-allowed;
+
+    &:hover {
+      border: $border;
+    }
   }
 
   &.readonly,
