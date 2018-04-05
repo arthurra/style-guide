@@ -20,6 +20,7 @@
       <a href="#typography"> Typography </a>
       <a href="#forms"> Forms </a>
       <a href="#buttons"> Buttons </a>
+      <a href="#tables"> Tables </a>
     </nav>
   </aside>
   <main>
@@ -60,6 +61,7 @@
       <p>The buttons for sumbitting and canceling a form are wrapped in a <code>.form-actions</code> container.</p>
 
       <h3> Text Inputs </h3>
+      <p> Text based input fields are the most common type of form control. For full support, every text field should have its <code>type</code> set. </p>
       <div class="grid-columns">
         <!-- BASIC -->
         <div class="form-group">
@@ -239,6 +241,7 @@
       </div>
 
       <h3> With Labels </h3>
+      <p> It is also a best practice to include a <code>label</code> for each text input. If an input has accompanying help text be sure to set the input's <code>aria-describedby</code> attribute to the <code>id</code> of its help text element. </p>
       <div class="grid-columns">
         <!-- BASIC -->
         <div class="form-group">
@@ -306,6 +309,7 @@
       </div>
 
       <h3> Checkboxes and Radio Buttons </h3>
+      <p> Checkboxes and radio buttons use the same <code>form-group</code> structure as text inputs. However, many <code>form-group__input</code>s can be added in succession within the form group to create a list of options.</p>
       <div class="grid-columns">
         <div class="form-group form-group--checkbox">
           <label for="" class="form-group__label"> Checkboxes </label>
@@ -405,6 +409,11 @@
         </button>
         <button class="button button--small disabled" disabled> Disabled </button>
       </div>
+    </section>
+
+    <section id="tables">
+      <h2> Tables </h2>
+      <p> Tables have several variations depending on the data that is being displayed or what needs to be done. They can be bare, striped and/or have actionable controls. </p>
 
     </section>
   </main>
