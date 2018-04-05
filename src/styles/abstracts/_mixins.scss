@@ -5,3 +5,22 @@
   background-position-y: -1px;
   background-repeat: repeat-y;
 }
+
+@mixin button-gradient($color, $hover-color) {
+  background: linear-gradient(to top, darken($color, 5%) 0%, $color 65%);
+
+  &.button--hover,
+  &:hover {
+    background: linear-gradient(to top, darken($hover-color, 7%) 0%, $hover-color 65%);
+  }
+
+  &.button--pressed,
+  &:focus,
+  &:active {
+    background: linear-gradient(to top, $hover-color 0%, $hover-color 100%);
+
+    &:hover {
+      background: linear-gradient(to top, $hover-color 0%, $hover-color 100%);
+    }
+  }
+}
