@@ -7,10 +7,15 @@ nav {
   grid-auto-rows: calc(3rem - 1px);
   align-items: center;
   font: $p;
+  overflow: hidden;
 
   a {
     padding: 0 $padding;
     line-height: calc(3rem - 1px);
+
+    &:hover {
+      background-color: $nav-background-color;
+    }
 
     & + a {
       border-top: $border;

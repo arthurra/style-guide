@@ -8,6 +8,7 @@ $dark-gray: #78909C;
 $gray: #CFD8DC;
 $light-gray: #EAECEF;
 $lighter-gray: #F5F5F5;
+$near-white: #FCFCFC;
 
 $sg-pink: #FF7A67;
 $sg-fuchsia: #CC74B7;
@@ -29,7 +30,8 @@ $color-info: $sg-blue;
 $color-primary: $sg-navy;
 $color-secondary: $sg-blue;
 
-$input-background-color: #FCFCFC;
+$input-background-color: $near-white;
+$nav-background-color: lighten($lighter-gray, 2%);
 
 
 // ---------------------------------- \\

@@ -345,6 +345,10 @@
       </div>
     </section>
 
+    <!-- //==========================// -->
+    <!-- //         BUTTONS          // -->
+    <!-- //==========================// -->
+
     <section id="buttons">
       <h2> Buttons </h2>
       <p> Use any combination of the available button classes and modifiers to quickly create a styled button. </p>
@@ -437,9 +441,74 @@
       </div>
     </section>
 
+    <!-- //==========================// -->
+    <!-- //          TABELS          // -->
+    <!-- //==========================// -->
+
     <section id="tables">
       <h2> Tables </h2>
       <p> Tables have several variations depending on the data that is being displayed or what needs to be done. They can be bare, striped and/or have actionable controls. </p>
+
+      <h3> Basic Tables </h3>
+      <p> All <code>&lt;table&gt;</code> elements are wraped in a <code>.table</code> container for proper styling. Each <code>&lt;table&gt;</code> element shoud consist of a <code>&lt;thead&gt;</code> for all columns headers, a <code>&lt;tbody&gt;</code> for all table data and occasionally a <code>&lt;tfoot&gt;</code> if needed. </p>
+
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th> Product Number </th>
+              <th> Quantity </th>
+              <th> Product Description </th>
+              <th> Design File </th>
+              <th> Department </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+            <tr>
+              <td> T1234 </td>
+              <td> 3 </td>
+              <td> Name Tag </td>
+              <td> file_name.cdr </td>
+              <td> Production </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3> Stripped Tables </h3>
+      <p> Striped tables have a slight variation in background color on every other row. This helps with legibility, particularly when the table has many rows. </p>
+      <p> To create a striped table, simply amend the <code>table--striped</code> class to the containing <code>&lt;div class="table"&gt; ... &lt;/div&gt;</code> </p>
+
+      <h3> Tables With Buttons </h3>
+      <p> Some table rows may require certain actions to be taken. For these actionable rows is important to wrap all controls in a <code>&lt;div class="actions"&gt; ... &lt;/div&gt;</code> container and use the <code>button--small</code> modifier on any button elements in order to keep the table row height consistent with default tables. The container will also put whitespace between the controls if there happens to be more than one. </p>
 
     </section>
   </main>

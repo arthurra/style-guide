@@ -1,0 +1,38 @@
+$table-cell-height: $padding * 3;
+$tight-table-cell-height: $padding * 2;
+
+.table {
+  display: grid;
+  margin-bottom: $padding;
+  font: $p;
+  line-height: 1;
+  background-color: #fff;
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  th {
+    text-align: left;
+    background-color: $lighter-gray;
+    border-bottom: $border;
+  }
+
+  tr:not(:last-of-type) td {
+    border-bottom: $border;
+  }
+
+  tr:hover td {
+    background-color: lighten($lighter-gray, 2%);
+  }
+
+  td {
+    color: $darker-gray;
+  }
+
+  th,
+  td {
+    height: $table-cell-height;
+    padding: $half-padding;
+    vertical-align: middle;
+  }
+}
