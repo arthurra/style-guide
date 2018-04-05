@@ -11,15 +11,21 @@ $small-button-height: $button-height * 0.75;
   line-height: 1;
   color: #fff;
   background-color: $color-secondary;
-  border: 1px solid $color-primary;
+  border: 1px solid $color-secondary;
   border-radius: $border-radius;
   cursor: pointer;
   box-shadow: $dark-box-shadow;
   @include button-gradient($color-secondary, $color-primary)
 
+  &--hover,
+  &:hover {
+    border-color: $color-primary;
+  }
+
   &--pressed,
   &:active,
   &:focus {
+    border-color: $color-primary;
     box-shadow: 0 0 0 1px #fff inset;
     outline: none;
   }
