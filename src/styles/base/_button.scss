@@ -11,23 +11,27 @@ $small-button-height: $button-height * 0.75;
   line-height: 1;
   color: #fff;
   background-color: $color-secondary;
+  background: linear-gradient(to top, darken($color-secondary, 5%) 0%, $color-secondary 65%);
   border: 1px solid $color-primary;
   border-radius: $border-radius;
   cursor: pointer;
   box-shadow: $dark-box-shadow;
-  transition: all $transition-duration $smooth-ease;
 
   &--hover,
   &:hover {
-    background-color: $color-primary;
+    background: linear-gradient(to top, darken($color-primary, 7%) 0%, $color-primary 65%);
   }
 
   &--pressed,
   &:active,
   &:focus {
-    background-color: $color-primary;
+    background: linear-gradient(to top, $color-primary 0%, $color-primary 100%);
     box-shadow: 0 0 0 1px #fff inset;
     outline: none;
+
+    &:hover {
+      background: linear-gradient(to top, $color-primary 0%, $color-primary 100%);
+    }
   }
 
   &--icon {
@@ -37,7 +41,7 @@ $small-button-height: $button-height * 0.75;
   &.disabled,
   [disabled] {
     color: $light-text-color !important;
-    background-color: $lighter-gray !important;
+    background: $lighter-gray !important;
     border: $border !important;
     cursor: not-allowed !important;
     box-shadow: none !important;
@@ -59,7 +63,7 @@ $small-button-height: $button-height * 0.75;
 
   &--outline {
     color: $color-secondary;
-    background-color: #fff;
+    background: linear-gradient(to top, #fff 0%, #fff 100%);
 
     .button__icon {
       color: $color-secondary;
@@ -68,7 +72,7 @@ $small-button-height: $button-height * 0.75;
     &.button--hover,
     &:hover {
       color: #fff;
-      background-color: $color-primary;
+      background: linear-gradient(to top, darken($color-primary, 7%) 0%, $color-primary 65%);
 
       .button__icon {
         color: #fff;
@@ -79,7 +83,7 @@ $small-button-height: $button-height * 0.75;
     &:active,
     &:focus {
       color: #fff;
-      background-color: $color-primary;
+      background: $color-primary;
 
       .button__icon {
         color: #fff;
@@ -89,7 +93,7 @@ $small-button-height: $button-height * 0.75;
 
   &--link {
     color: $color-secondary;
-    background-color: transparent;
+    background: transparent;
     border-color: transparent;
     box-shadow: none;
 
@@ -100,7 +104,7 @@ $small-button-height: $button-height * 0.75;
     &.button--hover,
     &:hover {
       color: #fff;
-      background-color: $color-primary;
+      background: linear-gradient(to top, darken($color-primary, 7%) 0%, $color-primary 65%);
       box-shadow: $dark-box-shadow;
 
       .button__icon {
@@ -112,7 +116,7 @@ $small-button-height: $button-height * 0.75;
     &:focus,
     &:active {
       color: #fff;
-      background-color: $color-primary;
+      background: $color-primary;
       box-shadow: 0 0 0 1px #fff inset;
 
       .button__icon {
