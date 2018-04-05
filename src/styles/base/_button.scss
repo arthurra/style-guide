@@ -1,0 +1,133 @@
+$button-height: $padding * 2;
+$small-button-height: $button-height * 0.75;
+
+.button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: $button-height;
+  padding: 0 $padding;
+  font: $p;
+  line-height: 1;
+  color: #fff;
+  background-color: $color-secondary;
+  border: 1px solid $color-primary;
+  border-radius: $border-radius;
+  cursor: pointer;
+  box-shadow: $dark-box-shadow;
+  transition: all $transition-duration $smooth-ease;
+
+  &--hover,
+  &:hover {
+    background-color: $color-primary;
+  }
+
+  &--pressed,
+  &:active,
+  &:focus {
+    background-color: $color-primary;
+    box-shadow: 0 0 0 1px #fff inset;
+    outline: none;
+  }
+
+  &--icon {
+    padding-left: $padding * 2.5;
+  }
+
+  &.disabled,
+  [disabled] {
+    color: $light-text-color !important;
+    background-color: $lighter-gray !important;
+    border: $border !important;
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+  }
+
+  &--small {
+    height: $small-button-height;
+    padding: 0 $half-padding;
+    font-size: 0.75em;
+
+    &.button--icon {
+      padding-left: $padding * 1.75;
+
+      .button__icon {
+        left: $half-padding;
+      }
+    }
+  }
+
+  &--outline {
+    color: $color-secondary;
+    background-color: #fff;
+
+    .button__icon {
+      color: $color-secondary;
+    }
+
+    &.button--hover,
+    &:hover {
+      color: #fff;
+      background-color: $color-primary;
+
+      .button__icon {
+        color: #fff;
+      }
+    }
+
+    &.button--pressed,
+    &:active,
+    &:focus {
+      color: #fff;
+      background-color: $color-primary;
+
+      .button__icon {
+        color: #fff;
+      }
+    }
+  }
+
+  &--link {
+    color: $color-secondary;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+
+    .button__icon {
+      color: $color-secondary;
+    }
+
+    &.button--hover,
+    &:hover {
+      color: #fff;
+      background-color: $color-primary;
+      box-shadow: $dark-box-shadow;
+
+      .button__icon {
+        color: #fff;
+      }
+    }
+
+    &.button--pressed,
+    &:focus,
+    &:active {
+      color: #fff;
+      background-color: $color-primary;
+      box-shadow: 0 0 0 1px #fff inset;
+
+      .button__icon {
+        color: #fff;
+      }
+
+      &:hover {
+        box-shadow: 0 0 0 1px #fff inset;
+      }
+    }
+  }
+}
+
+.button__icon {
+  position: absolute;
+  left: $padding;
+  color: #fff;
+}

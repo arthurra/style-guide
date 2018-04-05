@@ -65,20 +65,19 @@ $help-text-height: $label-height;
     grid-template-rows: $input-height;
     grid-template-columns: $input-height auto;
     grid-template-areas: "input label";
-    justify-items: center;
     align-items: center;
   }
 }
 
 .form-group__checkbox,
-.form-grou__radio {
+.form-group__radio {
   grid-area: input;
+  justify-self: center;
 }
 
 .form-group__checkbox-label,
 .form-group__radio-label {
   grid-area: label;
-  justify-self: start;
 }
 
 

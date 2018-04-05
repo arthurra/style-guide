@@ -29,3 +29,11 @@ main {
   grid-template-columns: repeat( 4, 1fr );
   grid-gap: 0 $padding;
 }
+
+.grid-columns-5 {
+  display: grid;
+  grid-template-columns: repeat( 5, auto );
+  grid-gap: $padding;
+  justify-items: start;
+  justify-content: start;
+}
