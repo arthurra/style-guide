@@ -2,3 +2,38 @@
   font-family: "Roboto";
   src:url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,900');
 }
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

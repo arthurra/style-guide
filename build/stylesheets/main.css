@@ -52,11 +52,41 @@ table {
   font-family: "Roboto";
   src: url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,900"); }
 
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
 * {
   box-sizing: border-box; }
 
 html {
-  font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smooquarterg: subpixel-antialiased;
@@ -81,7 +111,7 @@ a {
 
 label {
   display: inline-block;
-  font: normal normal 700 0.75rem/2 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 0.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5A6779;
   letter-spacing: 0.01em; }
 
@@ -100,42 +130,42 @@ code {
   white-space: pre; }
 
 h1 {
-  font: normal normal 900 1.75rem/1.572 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 900 1.75rem/1.572 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1.25rem;
   padding-top: 1rem;
   letter-spacing: 0.01em; }
 
 h2 {
-  font: normal normal 400 1.375rem/2.182 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 1.375rem/2.182 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1rem;
   padding-top: 3rem;
   letter-spacing: -0.01em; }
 
 h3 {
-  font: normal normal 700 0.875rem/2.575 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 0.875rem/2.575 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.75rem;
   padding-top: 2rem;
   letter-spacing: 0.02em; }
 
 h4 {
-  font: italic normal 300 1rem/2.25 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 300 1rem/2.25 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.75rem;
   padding-top: 1rem; }
 
 h5 {
-  font: normal normal 700 0.75rem/1.667 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 0.75rem/1.667 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5rem;
   padding: 1.125rem 0 0.125rem;
   letter-spacing: 0.02em; }
 
 h6 {
-  font: italic normal 400 0.75rem/1.667 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 400 0.75rem/1.667 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5rem;
   padding: calc(1rem + 1px) 0 calc(0.25rem - 1px);
   letter-spacing: 0.01em; }
 
 p {
-  font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: -1px;
   margin-bottom: 1rem;
   padding-bottom: 1px;
@@ -147,7 +177,7 @@ p {
   position: relative;
   height: 2rem;
   padding: 0 1rem;
-  font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   color: #fff;
   background-color: #2c97de;
@@ -318,7 +348,7 @@ p {
   display: block;
   padding: 0 0.5rem;
   line-height: 2rem;
-  font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #37474F;
   background-color: #FCFCFC;
   border: 1px solid #CFD8DC;
@@ -406,7 +436,7 @@ p {
 
 .form-group__help-block {
   display: inline-block;
-  font: italic normal 400 0.75rem/1.667 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 400 0.75rem/1.667 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5rem;
   color: #78909C; }
   .form-group__help-block--info {
@@ -419,7 +449,7 @@ p {
 .table {
   display: grid;
   margin: -1px -1px 1rem -1px;
-  font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   background-color: #fff;
   border: 1px solid #CFD8DC;
@@ -497,7 +527,7 @@ nav {
   grid-template-columns: 1fr;
   grid-auto-rows: calc(3rem - 1px);
   align-items: center;
-  font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden; }
   nav a {
     padding: 0 1rem;
