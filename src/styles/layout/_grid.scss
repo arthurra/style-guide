@@ -5,7 +5,8 @@ body {
   grid-gap: $padding * 2;
   grid-template-areas:
     "header   header"
-    "sidebar  main";
+    "sidebar  main"
+    "footer   footer";
 }
 
 header {
@@ -20,6 +21,10 @@ main {
   grid-area: main;
   justify-self: center;
   max-width: 50em;
+}
+
+footer {
+  grid-area: footer;
 }
 
 .grid-columns {

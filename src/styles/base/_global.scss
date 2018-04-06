@@ -15,6 +15,12 @@ html {
 
 body {
   // @include grid-lines;
+}
+
+header,
+aside,
+main,
+footer {
   padding: $padding;
 }
 

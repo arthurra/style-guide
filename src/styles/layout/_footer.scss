@@ -1,0 +1,8 @@
+$footer-height: $padding * 3;
+
+footer {
+  height: $footer-height;
+  background-color: $black;
+  color: $light-text-color;
+  text-align: center;
+}
