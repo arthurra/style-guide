@@ -240,6 +240,22 @@
         </div>
       </div>
 
+      <h3> Text Areas </h3>
+      <div class="grid">
+        <div class="form-group form-group--textarea">
+          <textarea class="form-group__input" name="" placeholder="Text input"></textarea>
+        </div>
+        <div class="form-group form-group--textarea">
+          <textarea class="form-group__input form-group__input--icon-lr required" name="" placeholder="Text input">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-pen-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+        </div>
+      </div>
+
       <h3> With Labels </h3>
       <p> It is also a best practice to include a <code>label</code> for each text input. If an input has accompanying help text be sure to set the input's <code>aria-describedby</code> attribute to the <code>id</code> of its help text element. </p>
       <div class="grid-columns">
@@ -304,6 +320,28 @@
           <span id="help-block4" class="form-group__help-block form-group__help-block--danger">
             <i class="far fa-times-circle"></i>
             Invalid.
+          </span>
+        </div>
+      </div>
+
+      <!-- TEXTAREAS -->
+      <div class="grid">
+        <div class="form-group form-group--textarea">
+          <label class="form-group__label" for="textarea1"> Input Label </label>
+          <textarea id="textarea1" class="form-group__input" name="" placeholder="Text input"></textarea>
+        </div>
+        <div class="form-group form-group--textarea">
+          <label class="form-group__label" for="textarea2"> Input Label </label>
+          <textarea id="textarea2" class="form-group__input form-group__input--icon-lr required" name="" placeholder="Text input" area-describedby="help-block5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+          <div class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-pen-alt"></i>
+          </div>
+          <div class="form-group__input-icon form-group__input-icon--right   form-group__input-icon--required has-tooltip" aria-label="Required">
+            <i class="fas fa-asterisk"></i>
+          </div>
+          <span id="help-block5" class="form-group__help-block">
+            <i class="far fa-info-circle"></i>
+            Character Count: 240
           </span>
         </div>
       </div>
