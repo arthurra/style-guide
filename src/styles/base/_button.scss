@@ -46,7 +46,6 @@ $small-button-height: $button-height * 0.75;
   &--small {
     height: $small-button-height;
     padding: 0 $half-padding;
-    font-size: 0.75em;
 
     &.button--icon {
       padding-left: $padding * 1.75;

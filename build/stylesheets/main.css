@@ -179,8 +179,7 @@ p {
     box-shadow: none !important; }
   .button--small {
     height: 1.5rem;
-    padding: 0 0.5rem;
-    font-size: 0.75em; }
+    padding: 0 0.5rem; }
     .button--small.button--icon {
       padding-left: 1.75rem; }
       .button--small.button--icon .button__icon {
@@ -419,28 +418,45 @@ p {
 
 .table {
   display: grid;
-  margin-bottom: 1rem;
+  margin: -1px -1px 1rem -1px;
   font: normal normal 400 0.875rem/1.715 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   background-color: #fff;
   border: 1px solid #CFD8DC;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  .table th,
+  .table td {
+    padding: 0.5rem;
+    vertical-align: middle; }
   .table th {
+    height: calc(3rem - 1px);
     text-align: left;
     background-color: #F5F5F5;
     border-bottom: 1px solid #CFD8DC; }
+  .table td {
+    height: 3rem;
+    color: #5A6779; }
   .table tr:not(:last-of-type) td {
     border-bottom: 1px solid #CFD8DC; }
   .table tr:hover td {
     background-color: #fafafa; }
-  .table td {
-    color: #5A6779; }
-  .table th,
-  .table td {
-    height: 3rem;
-    padding: 0.5rem;
-    vertical-align: middle; }
+  .table--striped tr:nth-of-type(even) td {
+    background-color: #f8f8f8; }
+  .table--striped tr:nth-of-type(odd):hover td {
+    background-color: #fff; }
+  .table--condensed th {
+    height: calc(2rem - 1px); }
+  .table--condensed td {
+    height: 2rem; }
+
+.table__actions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  grid-gap: 0.5rem;
+  margin: -0.5rem;
+  padding-right: 0.5rem; }
 
 body {
   display: grid;

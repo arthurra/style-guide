@@ -1,9 +1,9 @@
 $table-cell-height: $padding * 3;
-$tight-table-cell-height: $padding * 2;
+$condensed-table-cell-height: $padding * 2;
 
 .table {
   display: grid;
-  margin-bottom: $padding;
+  margin: -1px -1px $padding -1px;
   font: $p;
   line-height: 1;
   background-color: #fff;
@@ -11,10 +11,22 @@ $tight-table-cell-height: $padding * 2;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
+  th,
+  td {
+    padding: $half-padding;
+    vertical-align: middle;
+  }
+
   th {
+    height: calc(#{$table-cell-height} - 1px);
     text-align: left;
     background-color: $lighter-gray;
     border-bottom: $border;
+  }
+
+  td {
+    height: $table-cell-height;
+    color: $darker-gray;
   }
 
   tr:not(:last-of-type) td {
@@ -25,14 +37,32 @@ $tight-table-cell-height: $padding * 2;
     background-color: lighten($lighter-gray, 2%);
   }
 
-  td {
-    color: $darker-gray;
+  &--striped {
+    tr:nth-of-type(even) td {
+      background-color: lighten($lighter-gray, 1.25%)
+    }
+
+    tr:nth-of-type(odd):hover td {
+      background-color: #fff;
+    }
   }
 
-  th,
-  td {
-    height: $table-cell-height;
-    padding: $half-padding;
-    vertical-align: middle;
+  &--condensed {
+    th {
+      height: calc(#{$condensed-table-cell-height} - 1px);
+    }
+
+    td {
+      height: $condensed-table-cell-height;
+    }
   }
+}
+
+.table__actions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  grid-gap: $half-padding;
+  margin: $half-padding * -1;
+  padding-right: $half-padding;
 }
