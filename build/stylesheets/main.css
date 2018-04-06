@@ -133,14 +133,14 @@ code {
   white-space: pre; }
 
 h1 {
-  font: normal normal 700 1.75rem/1.572 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 1.25rem;
-  padding-top: 1rem;
+  font: normal normal 700 1.75rem/3.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1rem;
+  padding-top: 3rem;
   letter-spacing: 0.01em; }
 
 h2 {
-  font: normal normal 400 1.375rem/2.182 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 1rem;
+  font: normal normal 400 1.375rem/1.572 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1.25rem;
   padding-top: 3rem;
   letter-spacing: -0.01em; }
 

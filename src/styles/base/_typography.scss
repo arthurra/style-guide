@@ -1,13 +1,13 @@
 h1 {
   font: $h1;
-  margin-bottom: $padding + $quarter-padding;
-  padding-top: $padding;
+  margin-bottom: $padding;
+  padding-top: $padding * 3;
   letter-spacing: 0.01em;
 }
 
 h2 {
   font: $h2;
-  margin-bottom: $padding;
+  margin-bottom: $padding + $quarter-padding;
   padding-top: $padding * 3;
   letter-spacing: -0.01em;
 }
