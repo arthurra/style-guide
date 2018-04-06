@@ -222,46 +222,6 @@ $help-text-height: $label-height;
   &--required {
     color: $color-info;
     font-size: 0.6em;
-
-    &:before {
-      display: block;
-      position: absolute;
-      top: -4px;
-      left: 50%;
-      content: "Required";
-      font-size: 1.2em;
-      color: #fff;
-      padding: $quarter-padding;
-      background-color: $black;
-      border-radius: $border-radius;
-      transform: translate(-50%, -100%);
-      opacity: 0;
-      pointer-events: none;
-      transition: all $transition-duration $smooth-ease;
-    }
-
-    &:after {
-      position: absolute;
-      top: 4px;
-      left: 50%;
-      content: "";
-      width: 0;
-      height: 0;
-      border-width: 4px;
-      border-style: solid;
-      border-color: $black transparent transparent transparent;
-      transform: translate(-50%, -100%);
-      opacity: 0;
-      pointer-events: none;
-      transition: all $transition-duration $smooth-ease;
-    }
-
-    &:hover {
-      &:before,
-      &:after {
-        opacity: 1;
-      }
-    }
   }
 }
 
