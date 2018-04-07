@@ -187,7 +187,7 @@ p {
   border: 1px solid #2c97de;
   border-radius: 2px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to top, #218ad0 0%, #2c97de 65%); }
   .button.button--hover, .button:hover {
     background: linear-gradient(to top, #275c83 0%, #2f6f9f 65%); }
@@ -196,7 +196,8 @@ p {
     .button.button--pressed:hover, .button:focus:hover, .button:active:hover {
       background: linear-gradient(to top, #2f6f9f 0%, #2f6f9f 100%); }
   .button--hover, .button:hover {
-    border-color: #2f6f9f; }
+    border-color: #2f6f9f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px #fff inset; }
   .button--pressed, .button:active, .button:focus {
     border-color: #2f6f9f;
     box-shadow: 0 0 0 1px #fff inset;
@@ -252,7 +253,7 @@ p {
       color: #2c97de; }
     .button--link.button--hover, .button--link:hover {
       color: #fff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px #fff inset; }
       .button--link.button--hover .button__icon, .button--link:hover .button__icon {
         color: #fff; }
     .button--link.button--pressed, .button--link:focus, .button--link:active {

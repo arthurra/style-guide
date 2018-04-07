@@ -14,12 +14,13 @@ $small-button-height: $button-height * 0.75;
   border: 1px solid $color-secondary;
   border-radius: $border-radius;
   cursor: pointer;
-  box-shadow: $dark-box-shadow;
+  box-shadow: $box-shadow;
   @include button-gradient($color-secondary, $color-primary)
 
   &--hover,
   &:hover {
     border-color: $color-primary;
+    box-shadow: $dark-box-shadow, 0 0 0 1px #fff inset;
   }
 
   &--pressed,
@@ -98,7 +99,7 @@ $small-button-height: $button-height * 0.75;
     &.button--hover,
     &:hover {
       color: #fff;
-      box-shadow: $dark-box-shadow;
+      box-shadow: $dark-box-shadow, 0 0 0 1px #fff inset;
 
       .button__icon {
         color: #fff;
