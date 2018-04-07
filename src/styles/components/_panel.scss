@@ -1,11 +1,26 @@
 // ---------------------------------- \\
-//             VARIABLES              \\
-// ---------------------------------- \\
-
-
-// ---------------------------------- \\
 //              LAYOUT                \\
 // ---------------------------------- \\
+
+.panel {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}
+
+.panel__header {
+  grid-area: header;
+}
+
+.panel__body {
+  grid-area: body;
+}
+
+.panel__footer {
+  grid-area: footer;
+}
 
 
 // ---------------------------------- \\
@@ -13,9 +28,9 @@
 // ---------------------------------- \\
 
 %panel {
-  padding: $padding;
+  margin-top: -1px;
   font: $p;
-  color: $darker-gray;
+  background-color: $near-white;
   border: $border;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -28,4 +43,31 @@
 
 .panel {
   @extend %panel;
+  margin-bottom: $padding;
+}
+
+.panel__header {
+  margin-bottom: -1px;
+  padding: $padding;
+  color: $text-color;
+  background-color: $lighter-gray;
+  border-bottom: $border;
+}
+
+.panel__title {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.panel__body {
+  padding: ($padding * 1.5) $padding;
+  color: $darker-gray;
+}
+
+.panel__footer {
+  margin-top: -1px;
+  padding: $half-padding $padding;
+  background-color: $lighter-gray;
+  border-top: $border;
 }
