@@ -507,6 +507,14 @@ p {
   .has-tooltip:hover:before, .has-tooltip:hover:after {
     opacity: 1; }
 
+.panel {
+  padding: 1rem;
+  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #5A6779;
+  border: 1px solid #CFD8DC;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+
 footer {
   height: 3rem;
   background-color: #37474F;
