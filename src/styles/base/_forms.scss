@@ -3,6 +3,7 @@
 // ---------------------------------- \\
 
 $input-height: $padding * 2;
+$icon-width: $input-height;
 $label-height: $input-height * 0.75;
 $help-text-height: $label-height;
 
@@ -14,7 +15,7 @@ $help-text-height: $label-height;
 .form-group {
   display: grid;
   grid-template-rows: auto $input-height auto;
-  grid-template-columns: $input-height 1fr $input-height;
+  grid-template-columns: $icon-width 1fr $icon-width;
   grid-template-areas:
     "label label label"
     "input-left-icon input input-right-icon"
@@ -56,7 +57,7 @@ $help-text-height: $label-height;
   grid-auto-rows: $input-height;
   grid-template-areas:
     "label"
-    "checkbox";
+    "inputs";
   grid-row-gap: $half-padding;
   justify-content: start;
 
@@ -64,7 +65,7 @@ $help-text-height: $label-height;
     grid-area: auto;
     display: grid;
     grid-template-rows: $input-height;
-    grid-template-columns: $input-height auto;
+    grid-template-columns: $icon-width auto;
     grid-template-areas: "input label";
     align-items: center;
   }
