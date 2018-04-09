@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $black;
+}
+
 h1 {
   font: $h1;
   margin-bottom: $padding;
@@ -45,5 +49,4 @@ p {
   margin-top: -1px;
   margin-bottom: $padding;
   padding-bottom: 1px;
-  color: $darker-gray;
 }

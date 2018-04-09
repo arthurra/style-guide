@@ -29,13 +29,13 @@ $condensed-table-cell-height: $padding * 2;
   th {
     height: calc(#{$table-cell-height} - 1px);
     text-align: left;
+    color: $black;
     background-color: $lighter-gray;
     border-bottom: $border;
   }
 
   td {
     height: $table-cell-height;
-    color: $darker-gray;
   }
 
   tr:not(:last-of-type) td {

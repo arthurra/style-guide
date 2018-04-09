@@ -101,7 +101,7 @@ html {
           font-variant-ligatures: common-ligatures;
   -webkit-font-kerning: normal;
           font-kerning: normal;
-  color: #37474F; }
+  color: #5A6779; }
 
 header,
 aside,
@@ -121,7 +121,6 @@ a {
 label {
   display: inline-block;
   font: normal normal 500 0.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #5A6779;
   letter-spacing: 0.01em; }
 
 section {
@@ -137,6 +136,9 @@ code {
   border-radius: 2px;
   font-family: monospace;
   white-space: pre; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #37474F; }
 
 h1 {
   font: normal normal 700 1.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -177,8 +179,7 @@ p {
   font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: -1px;
   margin-bottom: 1rem;
-  padding-bottom: 1px;
-  color: #5A6779; }
+  padding-bottom: 1px; }
 
 .button {
   display: flex;
@@ -404,7 +405,7 @@ p {
   padding: 0 0.5rem;
   line-height: 2rem;
   font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #37474F;
+  color: #5A6779;
   background-color: #FCFCFC;
   border: 1px solid #CFD8DC;
   border-radius: 2px;
@@ -484,11 +485,11 @@ p {
   .table th {
     height: calc(3rem - 1px);
     text-align: left;
+    color: #37474F;
     background-color: #F5F5F5;
     border-bottom: 1px solid #CFD8DC; }
   .table td {
-    height: 3rem;
-    color: #5A6779; }
+    height: 3rem; }
   .table tr:not(:last-of-type) td {
     border-bottom: 1px solid #CFD8DC; }
   .table tr:hover td {
@@ -519,6 +520,7 @@ p {
     left: 50%;
     content: attr(aria-label);
     font: normal normal 500 0.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.01em;
     line-height: 1;
     color: #fff;
     padding: 0.0625rem 0.25rem 0.1875rem;
@@ -532,12 +534,12 @@ p {
     transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
   .has-tooltip:after {
     position: absolute;
-    top: 4px;
+    top: 0.25rem;
     left: 50%;
     content: "";
     width: 0;
     height: 0;
-    border-width: 4px;
+    border-width: 0.25rem;
     border-style: solid;
     border-color: #37474F transparent transparent transparent;
     -webkit-transform: translate(-50%, -100%);
@@ -576,7 +578,6 @@ p {
 .panel__header {
   margin-bottom: -1px;
   padding: 1rem;
-  color: #37474F;
   background-color: #F5F5F5;
   border-bottom: 1px solid #CFD8DC; }
 
@@ -586,8 +587,7 @@ p {
   line-height: 1; }
 
 .panel__body {
-  padding: 1.5rem 1rem;
-  color: #5A6779; }
+  padding: 1.5rem 1rem; }
 
 .panel__footer {
   margin-top: -1px;
