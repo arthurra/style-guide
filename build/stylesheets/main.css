@@ -78,6 +78,12 @@ table {
 
 @font-face {
   font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Clear Sans";
   src: url("../fonts/ClearSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
@@ -114,7 +120,7 @@ a {
 
 label {
   display: inline-block;
-  font: normal normal 700 0.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 500 0.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5A6779;
   letter-spacing: 0.01em; }
 
@@ -197,8 +203,6 @@ p {
     background-color: #2f6f9f;
     border-color: #2f6f9f;
     box-shadow: 0 0 0 1px #fff inset; }
-  .button--icon {
-    padding-left: 2.5rem; }
   .button.disabled,
   .button [disabled] {
     color: #78909C !important;
@@ -206,6 +210,22 @@ p {
     border: 1px solid #CFD8DC !important;
     cursor: not-allowed !important;
     box-shadow: none !important; }
+  .button--icon {
+    padding-left: 2.5rem; }
+  .button--confirm {
+    background-color: #39C46C;
+    border-color: #39C46C; }
+    .button--confirm:hover, .button--confirm:focus {
+      border-color: #2e9c56; }
+    .button--confirm:active {
+      background-color: #2e9c56; }
+  .button--danger {
+    background-color: #D63A3A;
+    border-color: #D63A3A; }
+    .button--danger:hover, .button--danger:focus {
+      border-color: #b72626; }
+    .button--danger:active {
+      background-color: #b72626; }
   .button--small {
     height: 1.5rem;
     padding: 0 0.5rem; }
@@ -228,6 +248,22 @@ p {
       background-color: #2f6f9f; }
       .button--outline.button--pressed .button__icon, .button--outline:active .button__icon {
         color: #fff; }
+    .button--outline.button--confirm {
+      color: #39C46C; }
+      .button--outline.button--confirm:hover, .button--outline.button--confirm:focus {
+        color: #fff;
+        background-color: #39C46C;
+        border-color: #2e9c56; }
+      .button--outline.button--confirm:active {
+        background-color: #2e9c56; }
+    .button--outline.button--danger {
+      color: #D63A3A; }
+      .button--outline.button--danger:hover, .button--outline.button--danger:focus {
+        color: #fff;
+        background-color: #D63A3A;
+        border-color: #b72626; }
+      .button--outline.button--danger:active {
+        background-color: #b72626; }
   .button--link {
     color: #2c97de;
     background-color: transparent;
@@ -249,6 +285,22 @@ p {
       box-shadow: 0 0 0 1px #fff inset; }
       .button--link.button--pressed .button__icon, .button--link:active .button__icon {
         color: #fff; }
+    .button--link.button--confirm {
+      color: #39C46C; }
+      .button--link.button--confirm:hover, .button--link.button--confirm:focus {
+        color: #fff;
+        background-color: #39C46C;
+        border-color: #2e9c56; }
+      .button--link.button--confirm:active {
+        background-color: #2e9c56; }
+    .button--link.button--danger {
+      color: #D63A3A; }
+      .button--link.button--danger:hover, .button--link.button--danger:focus {
+        color: #fff;
+        background-color: #D63A3A;
+        border-color: #b72626; }
+      .button--link.button--danger:active {
+        background-color: #b72626; }
 
 .button__icon {
   position: absolute;
@@ -321,7 +373,9 @@ p {
 
 .form-group {
   position: relative;
-  margin-bottom: 1rem; }
+  margin-top: -1px;
+  margin-bottom: 1rem;
+  padding-bottom: 1px; }
   .form-group--info .form-group__input {
     border-color: #2c97de;
     background-color: #f2f9fd; }
@@ -461,14 +515,13 @@ p {
   .has-tooltip:before {
     display: block;
     position: absolute;
-    top: -4px;
+    top: -0.25rem;
     left: 50%;
     content: attr(aria-label);
-    font: normal normal 700 0.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font: normal normal 500 0.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1;
     color: #fff;
-    padding: 0.25rem;
+    padding: 0.0625rem 0.25rem 0.1875rem;
     background-color: #37474F;
     border-radius: 2px;
     -webkit-transform: translate(-50%, -100%);

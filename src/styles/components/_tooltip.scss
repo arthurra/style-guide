@@ -4,14 +4,13 @@
   &:before {
     display: block;
     position: absolute;
-    top: -4px;
+    top: ($quarter-padding * -1);
     left: 50%;
     content: attr(aria-label);
     font: $label;
-    font-weight: 400;
     line-height: 1;
     color: #fff;
-    padding: $quarter-padding;
+    padding: ($quarter-padding * 0.25) $quarter-padding ($quarter-padding * 0.75);
     background-color: $black;
     border-radius: $border-radius;
     transform: translate(-50%, -100%);

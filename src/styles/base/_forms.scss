@@ -109,7 +109,9 @@ $help-text-height: $label-height;
 
 .form-group {
   position: relative;
+  margin-top: -1px;
   margin-bottom: $padding;
+  padding-bottom: 1px;
 
   &--info {
     .form-group__input {
