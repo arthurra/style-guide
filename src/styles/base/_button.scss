@@ -42,10 +42,6 @@ $small-button-height: $button-height * 0.75;
     box-shadow: 0 0 0 1px #fff inset;
   }
 
-  &--icon {
-    padding-left: $padding * 2.5;
-  }
-
   &.disabled,
   [disabled] {
     color: $light-text-color !important;
@@ -53,6 +49,38 @@ $small-button-height: $button-height * 0.75;
     border: $border !important;
     cursor: not-allowed !important;
     box-shadow: none !important;
+  }
+
+  &--icon {
+    padding-left: $padding * 2.5;
+  }
+
+  &--confirm {
+    background-color: $color-success;
+    border-color: $color-success;
+
+    &:hover,
+    &:focus {
+      border-color: darken($color-success, 10%);
+    }
+
+    &:active {
+      background-color: darken($color-success, 10%);
+    }
+  }
+
+  &--danger {
+    background-color: $color-danger;
+    border-color: $color-danger;
+
+    &:hover,
+    &:focus {
+      border-color: darken($color-danger, 10%);
+    }
+
+    &:active {
+      background-color: darken($color-danger, 10%);
+    }
   }
 
   &--small {
@@ -97,6 +125,36 @@ $small-button-height: $button-height * 0.75;
         color: #fff;
       }
     }
+
+    &.button--confirm {
+      color: $color-success;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: $color-success;
+        border-color: darken($color-success, 10%);
+      }
+
+      &:active {
+        background-color: darken($color-success, 10%);
+      }
+    }
+
+    &.button--danger {
+      color: $color-danger;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: $color-danger;
+        border-color: darken($color-danger, 10%);
+      }
+
+      &:active {
+        background-color: darken($color-danger, 10%);
+      }
+    }
   }
 
   &--link {
@@ -133,6 +191,36 @@ $small-button-height: $button-height * 0.75;
 
       .button__icon {
         color: #fff;
+      }
+    }
+
+    &.button--confirm {
+      color: $color-success;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: $color-success;
+        border-color: darken($color-success, 10%);
+      }
+
+      &:active {
+        background-color: darken($color-success, 10%);
+      }
+    }
+
+    &.button--danger {
+      color: $color-danger;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: $color-danger;
+        border-color: darken($color-danger, 10%);
+      }
+
+      &:active {
+        background-color: darken($color-danger, 10%);
       }
     }
   }
