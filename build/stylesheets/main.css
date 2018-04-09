@@ -203,7 +203,7 @@ p {
   .button--pressed, .button:active {
     background-color: #2f6f9f;
     border-color: #2f6f9f;
-    box-shadow: 0 0 0 1px #fff inset; }
+    box-shadow: 0 0 0 2px #fff inset; }
   .button.disabled,
   .button [disabled] {
     color: #78909C !important;
@@ -283,7 +283,7 @@ p {
       color: #fff;
       background-color: #2f6f9f;
       border-color: #2f6f9f;
-      box-shadow: 0 0 0 1px #fff inset; }
+      box-shadow: 0 0 0 2px #fff inset; }
       .button--link.button--pressed .button__icon, .button--link:active .button__icon {
         color: #fff; }
     .button--link.button--confirm {
