@@ -211,8 +211,6 @@ p {
     border: 1px solid #CFD8DC !important;
     cursor: not-allowed !important;
     box-shadow: none !important; }
-  .button--icon {
-    padding-left: 2.5rem; }
   .button--confirm {
     background-color: #39C46C;
     border-color: #39C46C; }
@@ -230,25 +228,15 @@ p {
   .button--small {
     height: 1.5rem;
     padding: 0 0.5rem; }
-    .button--small.button--icon {
-      padding-left: 1.75rem; }
-      .button--small.button--icon .button__icon {
-        left: 0.5rem; }
   .button--outline {
     color: #2c97de;
     background-color: #fff; }
-    .button--outline .button__icon {
-      color: #2c97de; }
     .button--outline.button--hover, .button--outline:hover, .button--outline:focus {
       color: #fff;
       background-color: #2c97de; }
-      .button--outline.button--hover .button__icon, .button--outline:hover .button__icon, .button--outline:focus .button__icon {
-        color: #fff; }
     .button--outline.button--pressed, .button--outline:active {
       color: #fff;
       background-color: #2f6f9f; }
-      .button--outline.button--pressed .button__icon, .button--outline:active .button__icon {
-        color: #fff; }
     .button--outline.button--confirm {
       color: #39C46C; }
       .button--outline.button--confirm:hover, .button--outline.button--confirm:focus {
@@ -270,22 +258,16 @@ p {
     background-color: transparent;
     border-color: transparent;
     box-shadow: none; }
-    .button--link .button__icon {
-      color: #2c97de; }
     .button--link.button--hover, .button--link:hover, .button--link:focus {
       color: #fff;
       background-color: #2c97de;
       border-color: #2f6f9f;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px #fff inset; }
-      .button--link.button--hover .button__icon, .button--link:hover .button__icon, .button--link:focus .button__icon {
-        color: #fff; }
     .button--link.button--pressed, .button--link:active {
       color: #fff;
       background-color: #2f6f9f;
       border-color: #2f6f9f;
       box-shadow: 0 0 0 2px #fff inset; }
-      .button--link.button--pressed .button__icon, .button--link:active .button__icon {
-        color: #fff; }
     .button--link.button--confirm {
       color: #39C46C; }
       .button--link.button--confirm:hover, .button--link.button--confirm:focus {
@@ -303,11 +285,8 @@ p {
       .button--link.button--danger:active {
         background-color: #b72626; }
 
-.button__icon {
-  position: absolute;
-  left: 1rem;
-  color: #fff;
-  transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.button__icon-label {
+  margin-left: 0.5rem; }
 
 .form-group {
   display: grid;
@@ -625,6 +604,7 @@ footer {
 .grid {
   display: grid;
   grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   grid-gap: 1rem; }
 
 .grid-columns {

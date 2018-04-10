@@ -51,10 +51,6 @@ $small-button-height: $button-height * 0.75;
     box-shadow: none !important;
   }
 
-  &--icon {
-    padding-left: $padding * 2.5;
-  }
-
   &--confirm {
     background-color: $color-success;
     border-color: $color-success;
@@ -86,14 +82,6 @@ $small-button-height: $button-height * 0.75;
   &--small {
     height: $small-button-height;
     padding: 0 $half-padding;
-
-    &.button--icon {
-      padding-left: $padding * 1.75;
-
-      .button__icon {
-        left: $half-padding;
-      }
-    }
   }
 
   &--outline {
@@ -101,29 +89,17 @@ $small-button-height: $button-height * 0.75;
     background-color: #fff;
     // @include button-gradient(#fff, $color-primary);
 
-    .button__icon {
-      color: $color-secondary;
-    }
-
     &.button--hover,
     &:hover,
     &:focus {
       color: #fff;
       background-color: $color-secondary;
-
-      .button__icon {
-        color: #fff;
-      }
     }
 
     &.button--pressed,
     &:active {
       color: #fff;
       background-color: $color-primary;
-
-      .button__icon {
-        color: #fff;
-      }
     }
 
     &.button--confirm {
@@ -164,10 +140,6 @@ $small-button-height: $button-height * 0.75;
     box-shadow: none;
     // @include button-gradient(transparent, $color-primary);
 
-    .button__icon {
-      color: $color-secondary;
-    }
-
     &.button--hover,
     &:hover,
     &:focus {
@@ -175,11 +147,6 @@ $small-button-height: $button-height * 0.75;
       background-color: $color-secondary;
       border-color: $color-primary;
       box-shadow: $dark-box-shadow, 0 0 0 1px #fff inset;
-
-
-      .button__icon {
-        color: #fff;
-      }
     }
 
     &.button--pressed,
@@ -188,10 +155,6 @@ $small-button-height: $button-height * 0.75;
       background-color: $color-primary;
       border-color: $color-primary;
       box-shadow: 0 0 0 2px #fff inset;
-
-      .button__icon {
-        color: #fff;
-      }
     }
 
     &.button--confirm {
@@ -226,9 +189,6 @@ $small-button-height: $button-height * 0.75;
   }
 }
 
-.button__icon {
-  position: absolute;
-  left: $padding;
-  color: #fff;
-  transition: all $transition-duration $smooth-ease;
+.button__icon-label {
+  margin-left: $half-padding;
 }
