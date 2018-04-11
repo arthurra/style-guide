@@ -617,7 +617,7 @@ footer {
 body {
   display: grid;
   grid-template-columns: minmax(12em, 1fr) 4fr;
-  grid-template-rows: 8em 1fr;
+  grid-template-rows: auto 1fr;
   grid-gap: 2rem;
   grid-template-areas: "header   header" "sidebar  main" "footer   footer"; }
 
