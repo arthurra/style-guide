@@ -351,6 +351,24 @@ p {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem; }
 
+.form-group--file {
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  grid-template-areas: "label" "input" "help-text"; }
+  .form-group--file .form-group__input {
+    grid-area: input;
+    display: grid;
+    grid-template-rows: 1rem 4rem 1.5rem 1rem;
+    grid-template-areas: "." "icon" "text" ".";
+    justify-items: center;
+    align-items: center; }
+
+.form-group__file-icon {
+  grid-area: icon; }
+
+.form-group__file-label {
+  grid-area: text; }
+
 .form-group {
   position: relative;
   margin-top: -1px;
@@ -392,6 +410,10 @@ p {
   .form-group--checkbox .form-group__input,
   .form-group--radio .form-group__input {
     padding: 0 0.5rem 0 0; }
+  .form-group--file .form-group__input {
+    color: #78909C; }
+    .form-group--file .form-group__input:hover {
+      color: #2c97de; }
   .form-group__input::-webkit-input-placeholder {
     color: #78909C; }
   .form-group__input:-ms-input-placeholder {
@@ -447,6 +469,18 @@ p {
     color: #39C46C; }
   .form-group__help-block--danger {
     color: #D63A3A; }
+
+.form-group--file .form-group__input {
+  margin: -1px 0; }
+
+.form-group__file {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden; }
+
+.form-group__file-icon {
+  font-size: 4em;
+  line-height: 4rem; }
 
 .table {
   display: grid;

@@ -383,15 +383,33 @@
         </div>
       </div>
 
+      <!-- TODO -->
+      <!-- Make file inputs keyboard accessible -->
       <h3> File Upload Input </h3>
       <div class="grid">
         <div class="form-group form-group--file">
-          <label for="file-input1" class="form-group__label"></label>
-          <input type="file" class="form-group__input">
+          <label for="file-input1" class="form-group__label"> Upload Files </label>
+          <label for="file-input1" class="form-group__input" tabindex="0">
+            <input type="file" id="file-input1" class="form-group__file">
+            <span class="form-group__file-icon">
+              <i class="fal fa-cloud-upload"></i>
+            </span>
+            <span class="form-group__file-label"> Select files to upload </span>
+          </label>
         </div>
         <div class="form-group form-group--file">
-          <label for="file-input1" class="form-group__label"></label>
-          <input type="file" class="form-group__input">
+          <label for="file-input2" class="form-group__label"> Upload files </label>
+          <label for="file-input2" class="form-group__input" tabindex="0" aria-describedby="help-block4">
+            <input type="file" id="file-input2" class="form-group__file">
+            <span class="form-group__file-icon">
+              <i class="fal fa-cloud-upload"></i>
+            </span>
+            <span class="form-group__file-label"> Select files to upload </span>
+          </label>
+          <span id="help-block4" class="form-group__help-block">
+            <i class="far fa-info-circle"></i>
+            Acceptable file types: .jpg .png .gif
+          </span>
         </div>
       </div>
     </section>

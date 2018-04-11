@@ -102,6 +102,43 @@ $help-text-height: $label-height;
   }
 }
 
+.form-group--file {
+  grid-template-rows:
+    auto
+    auto
+    auto;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "label"
+    "input"
+    "help-text";
+
+  .form-group__input {
+    grid-area: input;
+    display: grid;
+    grid-template-rows:
+      $input-height / 2
+      $input-height * 2
+      $label-height
+      $input-height / 2;
+    grid-template-areas:
+      "."
+      "icon"
+      "text"
+      ".";
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.form-group__file-icon {
+  grid-area: icon;
+}
+
+.form-group__file-label {
+  grid-area: text;
+}
+
 
 // ---------------------------------- \\
 //              DISPLAY               \\
@@ -178,6 +215,14 @@ $help-text-height: $label-height;
   .form-group--checkbox &,
   .form-group--radio & {
     padding: 0 $half-padding 0 0;
+  }
+
+  .form-group--file & {
+    color: $light-text-color;
+
+    &:hover {
+      color: $link-color
+    }
   }
 
   &::placeholder {
@@ -266,4 +311,23 @@ $help-text-height: $label-height;
   &--danger {
     color: $color-danger;
   }
+}
+
+.form-group--file .form-group__input {
+  margin: -1px 0;
+}
+
+.form-group__file {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-group__file-icon {
+  font-size: 4em;
+  line-height: 4rem;
+}
+
+.form-group__file-label {
+
 }
