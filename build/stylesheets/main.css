@@ -655,18 +655,20 @@ footer {
   margin-bottom: 1rem; }
 
 nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 3rem; }
+
+nav {
+  margin-top: -2px;
   border: 1px solid #CFD8DC;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: calc(3rem - 1px);
-  align-items: center;
-  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  overflow: hidden; }
+  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   nav a {
-    padding: 0 1rem;
-    line-height: calc(3rem - 1px); }
+    height: 3rem;
+    line-height: 2rem;
+    padding: 0.5rem; }
     nav a:hover {
       background-color: #fafafa; }
     nav a + a {

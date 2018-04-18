@@ -1,17 +1,38 @@
+// ---------------------------------- \\
+//             VARIABLES              \\
+// ---------------------------------- \\
+
+$nav-item-height: 3rem;
+$nav-item-padding: $half-padding;
+$nav-item-line-height: $nav-item-height - ($nav-item-padding * 2);
+
+
+// ---------------------------------- \\
+//              LAYOUT                \\
+// ---------------------------------- \\
+
 nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: $nav-item-height;
+}
+
+
+// ---------------------------------- \\
+//              DISPLAY               \\
+// ---------------------------------- \\
+
+nav {
+  margin-top: -2px;
   border: $border;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: calc(3rem - 1px);
-  align-items: center;
   font: $p;
-  overflow: hidden;
 
   a {
-    padding: 0 $padding;
-    line-height: calc(3rem - 1px);
+    height: $nav-item-height;
+    line-height: $nav-item-line-height;
+    padding: $nav-item-padding;
 
     &:hover {
       background-color: $nav-background-color;
