@@ -72,7 +72,7 @@ table {
 
 @font-face {
   font-family: "Clear Sans";
-  src: url("../fonts/ClearSans-RegularItalic.woff") format("woff");
+  src: url("../fonts/ClearSans-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic; }
 
