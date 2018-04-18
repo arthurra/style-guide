@@ -33,6 +33,7 @@ nav {
     height: $nav-item-height;
     line-height: $nav-item-line-height;
     padding: $nav-item-padding;
+    transition: all $transition-duration $smooth-ease;
 
     &:hover {
       background-color: $nav-background-color;

@@ -668,7 +668,8 @@ nav {
   nav a {
     height: 3rem;
     line-height: 2rem;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
     nav a:hover {
       background-color: #fafafa; }
     nav a + a {
