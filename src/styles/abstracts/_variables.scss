@@ -46,14 +46,14 @@ $base-font-size: 16px;
 
 $font-family: 'Clear Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$h1: normal normal 700 1.75rem/2 $font-family;        // 28px/56px
-$h2: normal normal 400 1.375rem/2 $font-family;       // 22px/44px
-$h3: normal normal 700 0.875rem/2.575 $font-family;   // 14px/36px
-$h4: normal normal 300 1rem/2.25 $font-family;        // 16px/36px
-$h5: normal normal 700 0.75rem/1.667 $font-family;    // 12px/20px
-$h6: italic normal 400 0.75rem/1.667 $font-family;    // 12px/20px
-$p: normal normal 400 0.875rem/1.715 $font-family;    // 14px/24px
-$label: normal normal 500 0.75rem/2 $font-family;     // 12px/24px
+$h1: normal normal 700 1.75rem/3.5rem $font-family;     // 28px/56px
+$h2: normal normal 400 1.375rem/2.75rem $font-family;   // 22px/44px
+$h3: normal normal 700 0.875rem/2.25rem $font-family;   // 14px/36px
+$h4: normal normal 300 1rem/2.25rem $font-family;       // 16px/36px
+$h5: normal normal 700 0.75rem/1.25rem $font-family;    // 12px/20px
+$h6: italic normal 400 0.75rem/1.25rem $font-family;    // 12px/20px
+$p: normal normal 400 0.875rem/1.5rem $font-family;     // 14px/24px
+$label: normal normal 500 0.75rem/1.5rem $font-family;  // 12px/24px
 
 
 // ---------------------------------- \\

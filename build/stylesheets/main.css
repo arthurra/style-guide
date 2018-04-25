@@ -92,7 +92,7 @@ table {
   box-sizing: border-box; }
 
 html {
-  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smooquarterg: subpixel-antialiased;
@@ -120,7 +120,7 @@ a {
 
 label {
   display: inline-block;
-  font: normal normal 500 0.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 500 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.01em; }
 
 section {
@@ -141,42 +141,42 @@ h1, h2, h3, h4, h5, h6 {
   color: #37474F; }
 
 h1 {
-  font: normal normal 700 1.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 1.75rem/3.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1rem;
   padding-top: 3rem;
   letter-spacing: 0.01em; }
 
 h2 {
-  font: normal normal 400 1.375rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 1.375rem/2.75rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1.25rem;
   padding-top: 3rem;
   letter-spacing: -0.01em; }
 
 h3 {
-  font: normal normal 700 0.875rem/2.575 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 0.875rem/2.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.75rem;
   padding-top: 2rem;
   letter-spacing: 0.02em; }
 
 h4 {
-  font: normal normal 300 1rem/2.25 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 300 1rem/2.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.75rem;
   padding-top: 1rem; }
 
 h5 {
-  font: normal normal 700 0.75rem/1.667 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 0.75rem/1.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5rem;
   padding: 1rem 0 0.25rem;
   letter-spacing: 0.02em; }
 
 h6 {
-  font: italic normal 400 0.75rem/1.667 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 400 0.75rem/1.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5rem;
   padding: calc(1rem + 1px) 0 calc(0.25rem - 1px);
   letter-spacing: 0.01em; }
 
 p {
-  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: -1px;
   margin-bottom: 1rem;
   padding-bottom: 1px; }
@@ -187,7 +187,7 @@ p {
   position: relative;
   height: 2rem;
   padding: 0 1rem;
-  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   color: #fff;
   background-color: #2c97de;
@@ -401,7 +401,7 @@ p {
   display: block;
   padding: 0 0.5rem;
   line-height: 2rem;
-  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5A6779;
   background-color: #FCFCFC;
   border: 1px solid #CFD8DC;
@@ -460,7 +460,7 @@ p {
 
 .form-group__help-block {
   display: inline-block;
-  font: italic normal 400 0.75rem/1.667 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 400 0.75rem/1.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5rem;
   color: #78909C; }
   .form-group__help-block--info {
@@ -485,7 +485,7 @@ p {
 .table {
   display: grid;
   margin: -1px -1px 1rem -1px;
-  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   background-color: #fff;
   border: 1px solid #CFD8DC;
@@ -532,7 +532,7 @@ p {
     top: -0.25rem;
     left: 50%;
     content: attr(aria-label);
-    font: normal normal 500 0.75rem/2 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal normal 500 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 0.01em;
     line-height: 1;
     color: #fff;
@@ -579,7 +579,7 @@ p {
 
 .panel {
   margin-top: -1px;
-  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #FCFCFC;
   border: 1px solid #CFD8DC;
   border-radius: 2px;
@@ -664,7 +664,7 @@ nav {
   border: 1px solid #CFD8DC;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  font: normal normal 400 0.875rem/1.715 "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   nav a {
     height: 3rem;
     line-height: 2rem;
