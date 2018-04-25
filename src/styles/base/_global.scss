@@ -13,8 +13,12 @@ html {
   color: $text-color;
 }
 
-body {
-  // @include grid-lines;
+body.show-grid {
+  @include grid-lines;
+}
+
+.hidden {
+  display: none;
 }
 
 header,

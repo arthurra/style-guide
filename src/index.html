@@ -26,6 +26,28 @@
   </aside>
   <main>
 
+    <button onclick="toggleGrid()" id="grid-toggle" class="button button--icon" data-show="false">
+      <span class="button__icon hidden">
+        <i class="far fa-eye-slash"></i>
+      </span>
+      <span class="button__icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="button__icon-label"> Grid </span>
+    </button>
+
+    <script type="text/javascript">
+      let body = document.querySelector('body');
+      let toggleButtonIcons = document.querySelectorAll('#grid-toggle .button__icon')
+
+      function toggleGrid() {
+        body.classList.toggle('show-grid');
+        for (var icon of toggleButtonIcons) {
+          icon.classList.toggle('hidden');
+        }
+      };
+    </script>
+
     <!-- //==========================// -->
     <!-- //        TYPOGRAPHY        // -->
     <!-- //==========================// -->
