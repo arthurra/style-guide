@@ -24,6 +24,11 @@ footer {
   padding: $padding;
 }
 
+header {
+  border-bottom: $border;
+  margin-bottom: -1px;
+}
+
 a {
   color: $link-color;
   text-decoration: none;

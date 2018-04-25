@@ -119,6 +119,10 @@ main,
 footer {
   padding: 1rem; }
 
+header {
+  border-bottom: 1px solid #CFD8DC;
+  margin-bottom: -1px; }
+
 a {
   color: #2c97de;
   text-decoration: none;
