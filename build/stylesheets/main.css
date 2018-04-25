@@ -1,3 +1,6 @@
+.hidden {
+  display: none; }
+
 .u-pt0 {
   padding-top: 0; }
 
@@ -109,9 +112,6 @@ body.show-grid {
   background-position: top;
   background-position-y: -1px;
   background-repeat: repeat-y; }
-
-.hidden {
-  display: none; }
 
 header,
 aside,
