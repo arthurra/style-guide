@@ -149,7 +149,8 @@ code {
   padding: 0.125rem 0.25rem;
   border-radius: 2px;
   font-family: monospace;
-  white-space: pre; }
+  white-space: pre;
+  vertical-align: top; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #37474F; }
