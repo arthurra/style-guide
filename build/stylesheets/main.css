@@ -596,7 +596,13 @@ p {
   grid-area: body; }
 
 .panel__footer {
-  grid-area: footer; }
+  grid-area: footer;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  grid-gap: 1rem;
+  justify-content: start;
+  justify-items: start; }
 
 .panel {
   margin-top: -1px;
