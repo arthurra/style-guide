@@ -21,6 +21,7 @@ $list-group-item-badge-width: $list-group-item-height;
 .list-group__item {
   display: grid;
   grid-template-areas: "content add-on";
+  align-items: center;
 }
 
 .list-group__item-badge,
@@ -36,19 +37,20 @@ $list-group-item-badge-width: $list-group-item-height;
 // ---------------------------------- \\
 
 .list-group {
+  margin-bottom: -2px;
   border: $border;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 }
 
 .list-group__item {
-  margin-top: -1px;
   font: $p;
-  line-height: $list-group-item-line-height;
+  // line-height: $list-group-item-line-height;
   padding: $list-group-item-padding;
   transition: all $transition-duration $smooth-ease;
 
   &:not(:first-of-type) {
+    margin-top: -1px;
     border-top: $border;
   }
 
@@ -69,6 +71,6 @@ $list-group-item-badge-width: $list-group-item-height;
 .list-group__item-icon {
   padding: $half-padding;
   font-size: 87.5%;
-  line-height: 1;
+  line-height: 1rem;
   color: $light-text-color;
 }

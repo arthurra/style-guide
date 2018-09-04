@@ -121,7 +121,7 @@ footer {
 
 header {
   border-bottom: 1px solid #CFD8DC;
-  margin-bottom: -1px; }
+  margin: -1px 0; }
 
 a {
   color: #2c97de;
@@ -161,8 +161,10 @@ code {
   padding: 0.125rem 0.25rem;
   border-radius: 2px;
   font-family: monospace;
+  font-size: 87.5%;
+  line-height: 1;
   white-space: pre;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #37474F; }
@@ -398,9 +400,7 @@ p {
 
 .form-group {
   position: relative;
-  margin-top: -1px;
-  margin-bottom: 1rem;
-  padding-bottom: 1px; }
+  margin-bottom: 1rem; }
   .form-group--info .form-group__input {
     border-color: #2c97de;
     background-color: #f2f9fd; }
@@ -511,7 +511,7 @@ p {
 
 .table {
   display: grid;
-  margin: -1px -1px 1rem -1px;
+  margin: -1px 0 calc(1rem - 1px) 0;
   font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   background-color: #fff;
@@ -523,7 +523,7 @@ p {
     padding: 0.5rem;
     vertical-align: middle; }
   .table th {
-    height: calc(3rem - 1px);
+    height: 3rem;
     text-align: left;
     color: #37474F;
     background-color: #F5F5F5;
@@ -539,7 +539,7 @@ p {
   .table--striped tr:nth-of-type(odd):hover td {
     background-color: #fff; }
   .table--condensed th {
-    height: calc(2rem - 1px); }
+    height: 2rem; }
   .table--condensed td {
     height: 2rem; }
 
@@ -619,6 +619,7 @@ p {
 
 .panel {
   margin-top: -1px;
+  margin-bottom: -1px;
   font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #FCFCFC;
   border: 1px solid #CFD8DC;
@@ -626,7 +627,7 @@ p {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .panel {
-  margin-bottom: 1rem; }
+  margin-bottom: calc(1rem - 1px); }
 
 .panel__header {
   margin-bottom: -1px;
@@ -637,7 +638,7 @@ p {
 .panel__title {
   margin: 0;
   padding: 0;
-  line-height: 1; }
+  line-height: 1.125; }
 
 .panel__body {
   padding: 1.5rem 1rem; }
@@ -655,7 +656,8 @@ p {
 
 .list-group__item {
   display: grid;
-  grid-template-areas: "content add-on"; }
+  grid-template-areas: "content add-on";
+  align-items: center; }
 
 .list-group__item-badge,
 .list-group__item-icon {
@@ -664,17 +666,17 @@ p {
   align-self: center; }
 
 .list-group {
+  margin-bottom: -2px;
   border: 1px solid #CFD8DC;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .list-group__item {
-  margin-top: -1px;
   font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 2rem;
   padding: 0.5rem;
   transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
   .list-group__item:not(:first-of-type) {
+    margin-top: -1px;
     border-top: 1px solid #CFD8DC; }
   .list-group__item:hover {
     background-color: #fafafa; }
@@ -690,7 +692,7 @@ p {
 .list-group__item-icon {
   padding: 0.5rem;
   font-size: 87.5%;
-  line-height: 1;
+  line-height: 1rem;
   color: #78909C; }
 
 footer {

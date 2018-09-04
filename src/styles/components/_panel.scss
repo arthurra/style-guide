@@ -35,6 +35,7 @@
 
 %panel {
   margin-top: -1px;
+  margin-bottom: -1px;
   font: $p;
   background-color: $near-white;
   border: $border;
@@ -49,7 +50,7 @@
 
 .panel {
   @extend %panel;
-  margin-bottom: $padding;
+  margin-bottom: calc(#{$padding} - 1px);
 }
 
 .panel__header {
@@ -62,7 +63,7 @@
 .panel__title {
   margin: 0;
   padding: 0;
-  line-height: 1;
+  line-height: 1.125;
 }
 
 .panel__body {

@@ -12,7 +12,7 @@ $condensed-table-cell-height: $padding * 2;
 
 .table {
   display: grid;
-  margin: -1px -1px $padding -1px;
+  margin: -1px 0 calc(#{$padding} - 1px) 0;
   font: $p;
   line-height: 1;
   background-color: #fff;
@@ -27,7 +27,7 @@ $condensed-table-cell-height: $padding * 2;
   }
 
   th {
-    height: calc(#{$table-cell-height} - 1px);
+    height: $table-cell-height;
     text-align: left;
     color: $black;
     background-color: $lighter-gray;
@@ -58,7 +58,7 @@ $condensed-table-cell-height: $padding * 2;
 
   &--condensed {
     th {
-      height: calc(#{$condensed-table-cell-height} - 1px);
+      height: $condensed-table-cell-height;
     }
 
     td {
