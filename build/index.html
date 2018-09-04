@@ -16,13 +16,13 @@
     <p> A base style guide of UI elements for starting new projects. </p>
   </header>
   <aside>
-    <nav>
-      <a href="#typography"> Typography </a>
-      <a href="#forms"> Forms </a>
-      <a href="#buttons"> Buttons </a>
-      <a href="#tables"> Tables </a>
-      <a href="#panels"> Panels </a>
-      <a href="#lists"> Lists </a>
+    <nav class="list-group">
+      <a href="#typography" class="list-group__item"> Typography </a>
+      <a href="#forms" class="list-group__item"> Forms </a>
+      <a href="#buttons" class="list-group__item"> Buttons </a>
+      <a href="#tables" class="list-group__item"> Tables </a>
+      <a href="#panels" class="list-group__item"> Panels </a>
+      <a href="#lists" class="list-group__item"> Lists </a>
     </nav>
   </aside>
   <main>
@@ -827,6 +827,8 @@
       <p> Basic lists include ordered and unordered lists. </p>
 
       <div class="grid-columns">
+
+        <!-- ordered list -->
         <div>
           <label for=""> Orderd List </label>
           <ol>
@@ -838,6 +840,7 @@
           </ol>
         </div>
 
+        <!-- unorderd list -->
         <div>
           <label for=""> Unordered List </label>
           <ul>
@@ -852,7 +855,110 @@
 
 
       <h3> List Group </h3>
+      <p> Some words. </p>
 
+      <div class="grid">
+
+        <!-- default list group -->
+        <div>
+          <label for=""> Basic List Group </label>
+          <div class="list-group">
+            <span class="list-group__item"> Typography </span>
+            <span class="list-group__item"> Forms </span>
+            <span class="list-group__item"> Buttons </span>
+            <span class="list-group__item"> Tables </span>
+            <span class="list-group__item"> Panels </span>
+            <span class="list-group__item"> Lists </span>
+          </div>
+        </div>
+
+        <!-- list group with links -->
+        <div>
+          <label for=""> Link List Group </label>
+          <div class="list-group">
+            <a href="" class="list-group__item"> Typography </a>
+            <a href="" class="list-group__item"> Forms </a>
+            <a href="" class="list-group__item"> Buttons </a>
+            <a href="" class="list-group__item"> Tables </a>
+            <a href="" class="list-group__item"> Panels </a>
+            <a href="" class="list-group__item"> Lists </a>
+          </div>
+        </div>
+
+        <!-- list group with badges -->
+        <div>
+          <label for=""> List Group with Badges </label>
+          <div class="list-group">
+            <a href="" class="list-group__item">
+              Typography
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Forms
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Buttons
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Tables
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Panels
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+            <a href="" class="list-group__item">
+              Lists
+              <span class="list-group__item-badge"> 42 </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- list group with icons -->
+        <div>
+          <label for=""> List Group with Icons </label>
+          <div class="list-group">
+            <span class="list-group__item">
+              Typography
+              <span class="list-group__item-icon has-tooltip" aria-label="Warning">
+                <i class="far fa-exclamation-triangle"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Forms
+              <span class="list-group__item-icon has-tooltip" aria-label="Favorite">
+                <i class="far fa-star"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Buttons
+              <span class="list-group__item-icon has-tooltip" aria-label="Alarm">
+                <i class="far fa-alarm-clock"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Tables
+              <span class="list-group__item-icon has-tooltip" aria-label="New Message">
+                <i class="far fa-comments"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Panels
+              <span class="list-group__item-icon has-tooltip" aria-label="New Notifications">
+                <i class="far fa-bell"></i>
+              </span>
+            </span>
+            <span class="list-group__item">
+              Lists
+              <span class="list-group__item-icon has-tooltip" aria-label="Example info text.">
+                <i class="far fa-info-circle"></i>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
 
       <h3> Definition List </h3>
 
