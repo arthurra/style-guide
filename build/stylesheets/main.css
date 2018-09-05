@@ -170,38 +170,38 @@ h1, h2, h3, h4, h5, h6 {
   color: #37474F; }
 
 h1 {
-  font: normal normal 700 1.75rem/3.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 1.875rem/3.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1rem;
   padding-top: 3rem;
   letter-spacing: 0.01em; }
 
 h2 {
-  font: normal normal 400 1.375rem/2.75rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 1.25rem;
+  font: normal normal 400 1.25rem/3rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1rem;
   padding-top: 3rem;
   letter-spacing: -0.01em; }
 
 h3 {
-  font: normal normal 700 0.875rem/2.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 0.75rem;
+  font: normal normal 700 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1rem;
   padding-top: 2rem;
   letter-spacing: 0.02em; }
 
 h4 {
-  font: normal normal 300 1rem/2.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 1rem/2.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.75rem;
   padding-top: 1rem; }
 
 h5 {
-  font: normal normal 700 0.75rem/1.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5rem;
-  padding: 1rem 0 0.25rem;
+  padding-top: 1rem;
   letter-spacing: 0.02em; }
 
 h6 {
-  font: italic normal 400 0.75rem/1.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 400 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5rem;
-  padding: calc(1rem + 1px) 0 calc(0.25rem - 1px);
+  padding-top: 1rem;
   letter-spacing: 0.01em; }
 
 p {
@@ -487,7 +487,7 @@ p {
 
 .form-group__help-block {
   display: inline-block;
-  font: italic normal 400 0.75rem/1.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 400 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5rem;
   color: #78909C; }
   .form-group__help-block--info {
@@ -638,7 +638,7 @@ p {
 .panel__title {
   margin: 0;
   padding: 0;
-  line-height: 1.125; }
+  line-height: 1.2; }
 
 .panel__body {
   padding: 1.5rem 1rem; }

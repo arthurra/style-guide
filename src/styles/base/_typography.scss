@@ -11,15 +11,14 @@ h1 {
 
 h2 {
   font: $h2;
-  margin-bottom: $padding + $quarter-padding;
+  margin-bottom: $padding;
   padding-top: $padding * 3;
   letter-spacing: -0.01em;
 }
 
 h3 {
   font: $h3;
-  // text-transform: uppercase;
-  margin-bottom: $half-padding + $quarter-padding;
+  margin-bottom: $padding;
   padding-top: $padding * 2;
   letter-spacing: 0.02em;
 }
@@ -33,14 +32,14 @@ h4 {
 h5 {
   font: $h5;
   margin-bottom: $half-padding;
-  padding: $padding 0 $quarter-padding;
+  padding-top: $padding;
   letter-spacing: 0.02em;
 }
 
 h6 {
   font: $h6;
   margin-bottom: $half-padding;
-  padding: calc(#{$padding} + 1px) 0 calc(#{$quarter-padding} - 1px);
+  padding-top: 1rem;
   letter-spacing: 0.01em;
 }
 

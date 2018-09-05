@@ -10,10 +10,12 @@
     "url": "git@github.com:arthurra/style-guide.git"
   },
   "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
+    "browser-sync": "^2.24.7",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
