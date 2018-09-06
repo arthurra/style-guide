@@ -40,6 +40,12 @@ footer {
   grid-gap: 0 $padding;
 }
 
+.grid-columns-half {
+  display: grid;
+  grid-template-columns: repeat( 2, 1fr );
+  grid-gap: 0 $padding;
+}
+
 .grid-columns-5 {
   display: grid;
   grid-template-columns: repeat( 5, auto );

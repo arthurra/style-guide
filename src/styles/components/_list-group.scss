@@ -3,7 +3,7 @@
 // ---------------------------------- \\
 
 $list-group-item-height: 3rem;
-$list-group-item-padding: $half-padding;
+$list-group-item-padding: $padding;
 $list-group-item-line-height: $list-group-item-height - ($list-group-item-padding * 2);
 $list-group-item-badge-width: $list-group-item-height;
 
@@ -31,13 +31,17 @@ $list-group-item-badge-width: $list-group-item-height;
   align-self: center;
 }
 
+.list-group__item-body {
+  grid-area: content;
+}
+
 
 // ---------------------------------- \\
 //              DISPLAY               \\
 // ---------------------------------- \\
 
 .list-group {
-  margin-bottom: -2px;
+  margin-bottom: calc(#{$padding} - 2px);
   border: $border;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -45,8 +49,7 @@ $list-group-item-badge-width: $list-group-item-height;
 
 .list-group__item {
   font: $p;
-  // line-height: $list-group-item-line-height;
-  padding: $list-group-item-padding;
+  padding: calc(#{$list-group-item-padding} - 1px) 1rem calc(#{$list-group-item-padding} + 1px);
   transition: all $transition-duration $smooth-ease;
 
   &:not(:first-of-type) {
@@ -69,8 +72,11 @@ $list-group-item-badge-width: $list-group-item-height;
 }
 
 .list-group__item-icon {
-  padding: $half-padding;
   font-size: 87.5%;
   line-height: 1rem;
   color: $light-text-color;
+}
+
+.list-group__item-body {
+  padding-bottom: $half-padding;
 }
