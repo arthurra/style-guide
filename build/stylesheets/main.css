@@ -703,6 +703,21 @@ p {
 .list-group__item-body {
   padding-bottom: 0.5rem; }
 
+.description-list {
+  display: grid;
+  grid-columns: 1fr 4fr;
+  grid-gap: 1rem;
+  grid-template-areas: "lebel content"; }
+
+.description-list {
+  margin-bottom: 1rem; }
+
+.description-list__label {
+  font: normal normal 700 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.description-list__content {
+  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 footer {
   height: 3rem;
   background-color: #37474F;

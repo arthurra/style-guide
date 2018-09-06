@@ -1,0 +1,27 @@
+// ---------------------------------- \\
+//              LAYOUT                \\
+// ---------------------------------- \\
+
+.description-list {
+  display: grid;
+  grid-columns: 1fr 4fr;
+  grid-gap: $padding;
+  grid-template-areas: "lebel content";
+}
+
+
+// ---------------------------------- \\
+//              DISPLAY               \\
+// ---------------------------------- \\
+
+.description-list {
+  margin-bottom: $padding
+}
+
+.description-list__label {
+  font: $h5;
+}
+
+.description-list__content {
+  font: $p;
+}
