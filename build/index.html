@@ -263,6 +263,42 @@
         </div>
       </div>
 
+      <h3> Select Boxes </h3>
+      <div class="grid">
+        <div class="form-group form-group--select">
+          <select name="colors" id="select1" class="form-group__input">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+        <div class="form-group form-group--select">
+          <select name="colors" id="select2" class="form-group__input form-group__input--focus">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+        <div class="form-group form-group--select form-group--danger">
+          <select name="colors" id="select3" class="form-group__input">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+        <div class="form-group form-group--select form-group--disabeld">
+          <select name="colors" id="select4" class="form-group__input" disabled>
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+      </div>
+
       <h3> Text Areas </h3>
       <div class="grid">
         <div class="form-group form-group--textarea">
@@ -343,6 +379,58 @@
           <span id="help-block4" class="form-group__help-block form-group__help-block--danger">
             <i class="far fa-times-circle"></i>
             Invalid.
+          </span>
+        </div>
+      </div>
+
+      <!-- SELECT BOXES -->
+      <div class="grid">
+        <div class="form-group form-group--select">
+          <label for="#select5" class="form-group__label"> Select Box Label </label>
+          <select name="colors" id="select5" class="form-group__input">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+        </div>
+        <div class="form-group form-group--select">
+          <label for="#select6" class="form-group__label"> Select Box Label </label>
+          <select name="colors" id="select6" class="form-group__input" aria-describedby="#help-block6">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+          <span id="help-block6" class="form-group__help-block form-group__help-block--info">
+            <i class="far fa-info-circle"></i>
+            Help text.
+          </span>
+        </div>
+        <div class="form-group form-group--select form-group--danger">
+          <label for="#select7" class="form-group__label"> Select Box Label </label>
+          <select name="colors" id="select7" class="form-group__input" aria-describedby="#help-block7">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+          <span id="help-block7" class="form-group__help-block form-group__help-block--danger">
+            <i class="far fa-times-circle"></i>
+            Invalid.
+          </span>
+        </div>
+        <div class="form-group form-group--select form-group--disabeld">
+          <label for="#select8" class="form-group__label"> Select Box Label </label>
+          <select name="colors" id="select8" class="form-group__input" disabled aria-describedby="help-block7">
+            <option value="0"> Select a color </option>
+            <option value="1"> Red </option>
+            <option value="2"> Blue </option>
+            <option value="3"> Green </option>
+          </select>
+          <span id="help-block8" class="form-group__help-block">
+            <i class="far fa-info-circle"></i>
+            This field is disabled.
           </span>
         </div>
       </div>

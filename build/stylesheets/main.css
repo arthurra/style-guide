@@ -401,6 +401,11 @@ p {
 .form-group__file-label {
   grid-area: text; }
 
+.form-group--select:before, .form-group--select:after {
+  grid-area: input-right-icon;
+  align-self: center;
+  justify-self: center; }
+
 .form-group {
   position: relative;
   margin-bottom: 1.5rem; }
@@ -428,6 +433,9 @@ p {
     color: #78909C; }
 
 .form-group__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: block;
   padding: 0 0.5rem;
   line-height: 2rem;
@@ -460,6 +468,7 @@ p {
     box-shadow: 0 0 20px -5px #2c97de;
     outline: none; }
   .form-group__input.disabled, .form-group__input[disabled] {
+    color: #78909C;
     background-color: #F5F5F5;
     cursor: not-allowed; }
     .form-group__input.disabled:hover, .form-group__input[disabled]:hover {
@@ -499,6 +508,22 @@ p {
     color: #39C46C; }
   .form-group__help-block--danger {
     color: #D63A3A; }
+
+.form-group--select:before, .form-group--select:after {
+  content: "";
+  position: relative;
+  border-style: solid;
+  border-width: 0.4rem 0.25rem;
+  border-radius: 2px;
+  transition: border-color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+
+.form-group--select:before {
+  top: 0.5rem;
+  border-color: #78909C transparent transparent transparent; }
+
+.form-group--select:after {
+  top: -0.5rem;
+  border-color: transparent transparent #78909C transparent; }
 
 .form-group--file .form-group__input {
   margin: -1px 0; }
