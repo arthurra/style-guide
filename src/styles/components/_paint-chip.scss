@@ -1,0 +1,97 @@
+// ---------------------------------- \\
+//              LAYOUT                \\
+// ---------------------------------- \\
+
+.paint-chip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "color title"
+    "color values";
+  grid-gap: 1rem;
+}
+
+.paint-chip__color {
+  grid-area: color;
+}
+
+.paint-chip__title {
+  grid-area: title;
+  display: grid;
+  align-items: center;
+}
+
+.paint-chip__values {
+  grid-area: values;
+  display: grid;
+}
+
+
+// ---------------------------------- \\
+//              DISPLAY               \\
+// ---------------------------------- \\
+
+.paint-chip {
+  @extend %panel;
+  margin-bottom: calc(#{$padding} - 1px);
+  padding: $padding;
+}
+
+.paint-chip__color {
+  .paint-chip--primary & {
+    background-color: $color-primary;
+  }
+
+  .paint-chip--secondary & {
+    background-color: $color-secondary;
+  }
+
+  .paint-chip--success & {
+    background-color: $color-success;
+  }
+
+  .paint-chip--warning & {
+    background-color: $color-warning;
+  }
+
+  .paint-chip--danger & {
+    background-color: $color-danger;
+  }
+
+  .paint-chip--info & {
+    background-color: $color-info;
+  }
+
+  .paint-chip--lighter-gray & {
+    background-color: $lighter-gray;
+  }
+
+  .paint-chip--light-gray & {
+    background-color: $light-gray;
+  }
+
+  .paint-chip--gray & {
+    background-color: $gray;
+  }
+
+  .paint-chip--dark-gray & {
+    background-color: $dark-gray;
+  }
+
+  .paint-chip--darker-gray & {
+    background-color: $darker-gray;
+  }
+
+  .paint-chip--black & {
+    background-color: $black;
+  }
+}
+
+.paint-chip__title {
+  font: $p;
+}
+
+.paint-chip__values {
+  font: $h6;
+  color: $light-text-color;
+}

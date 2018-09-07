@@ -645,7 +645,7 @@ p {
   justify-content: start;
   justify-items: start; }
 
-.panel {
+.panel, .paint-chip {
   margin-top: -1px;
   margin-bottom: -1px;
   font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -742,6 +742,71 @@ p {
 
 .description-list__content {
   font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.paint-chip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "color title" "color values";
+  grid-gap: 1rem; }
+
+.paint-chip__color {
+  grid-area: color; }
+
+.paint-chip__title {
+  grid-area: title;
+  display: grid;
+  align-items: center; }
+
+.paint-chip__values {
+  grid-area: values;
+  display: grid; }
+
+.paint-chip {
+  margin-bottom: calc(1rem - 1px);
+  padding: 1rem; }
+
+.paint-chip--primary .paint-chip__color {
+  background-color: #2f6f9f; }
+
+.paint-chip--secondary .paint-chip__color {
+  background-color: #2c97de; }
+
+.paint-chip--success .paint-chip__color {
+  background-color: #39C46C; }
+
+.paint-chip--warning .paint-chip__color {
+  background-color: #fdbb37; }
+
+.paint-chip--danger .paint-chip__color {
+  background-color: #D63A3A; }
+
+.paint-chip--info .paint-chip__color {
+  background-color: #2c97de; }
+
+.paint-chip--lighter-gray .paint-chip__color {
+  background-color: #F5F5F5; }
+
+.paint-chip--light-gray .paint-chip__color {
+  background-color: #EAECEF; }
+
+.paint-chip--gray .paint-chip__color {
+  background-color: #CFD8DC; }
+
+.paint-chip--dark-gray .paint-chip__color {
+  background-color: #78909C; }
+
+.paint-chip--darker-gray .paint-chip__color {
+  background-color: #5A6779; }
+
+.paint-chip--black .paint-chip__color {
+  background-color: #37474F; }
+
+.paint-chip__title {
+  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.paint-chip__values {
+  font: italic normal 400 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #78909C; }
 
 footer {
   height: 3rem;
