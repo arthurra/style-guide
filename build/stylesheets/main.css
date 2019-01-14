@@ -1,3 +1,4 @@
+@import url("https://rsms.me/inter/inter-ui.css");
 .hidden {
   display: none; }
 
@@ -98,15 +99,19 @@ table {
   box-sizing: border-box; }
 
 html {
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-rendering: optimizeLegibility;
-  -webkit-font-smooquarterg: subpixel-antialiased;
-  -moz-osx-font-smooquarterg: grayscale;
-  -webkit-font-variant-ligatures: common-ligatures;
-          font-variant-ligatures: common-ligatures;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-variant-ligatures: common-ligatures contextual;
+          font-variant-ligatures: common-ligatures contextual;
+  font-variant-alternates: styleset(ss01) character-variant(cv08);
+  font-variant-numeric: diagonal-fractions;
   -webkit-font-kerning: normal;
           font-kerning: normal;
+  -webkit-font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
+          font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
   color: #5A6779; }
 
 body.show-grid {
@@ -137,7 +142,7 @@ a {
 
 label {
   display: inline-block;
-  font: normal normal 500 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 500 0.75rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.01em; }
 
 ol, ul {
@@ -152,7 +157,7 @@ ul {
   margin-bottom: 1rem; }
 
 li {
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 section {
   padding-bottom: 1rem; }
@@ -175,42 +180,42 @@ h1, h2, h3, h4, h5, h6 {
   color: #37474F; }
 
 h1 {
-  font: normal normal 700 1.875rem/3.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 1.875rem/3.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1rem;
   padding-top: 3rem;
   letter-spacing: 0.01em; }
 
 h2 {
-  font: normal normal 400 1.25rem/3rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 1.25rem/3rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1rem;
   padding-top: 3rem;
   letter-spacing: -0.01em; }
 
 h3 {
-  font: normal normal 700 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1rem;
   padding-top: 2rem;
   letter-spacing: 0.02em; }
 
 h4 {
-  font: normal normal 400 1rem/2.25rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 1rem/2.25rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.75rem;
   padding-top: 1rem; }
 
 h5 {
-  font: normal normal 700 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 700 0.75rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5rem;
   padding-top: 1rem;
   letter-spacing: 0.02em; }
 
 h6 {
-  font: italic normal 400 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 400 0.75rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5rem;
   padding-top: 1rem;
   letter-spacing: 0.01em; }
 
 p {
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1rem; }
 
 .button {
@@ -219,7 +224,7 @@ p {
   position: relative;
   height: 2rem;
   padding: 0 1rem;
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   color: #fff;
   background-color: #2c97de;
@@ -439,7 +444,7 @@ p {
   display: block;
   padding: 0 0.5rem;
   line-height: 2rem;
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5A6779;
   background-color: #FCFCFC;
   border: 1px solid #CFD8DC;
@@ -499,7 +504,7 @@ p {
 
 .form-group__help-block {
   display: inline-block;
-  font: italic normal 400 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 400 0.75rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5rem;
   color: #78909C; }
   .form-group__help-block--info {
@@ -540,7 +545,7 @@ p {
 .table {
   display: grid;
   margin: -1px 0 calc(1rem - 1px) 0;
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   background-color: #fff;
   border: 1px solid #CFD8DC;
@@ -593,7 +598,7 @@ p {
     top: -0.25rem;
     left: 50%;
     content: attr(aria-label);
-    font: normal normal 500 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal normal 500 0.75rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 0.01em;
     line-height: 1;
     white-space: nowrap;
@@ -648,7 +653,7 @@ p {
 .panel, .paint-chip {
   margin-top: -1px;
   margin-bottom: -1px;
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #FCFCFC;
   border: 1px solid #CFD8DC;
   border-radius: 2px;
@@ -703,7 +708,7 @@ p {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .list-group__item {
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: calc(1rem - 1px) 1rem calc(1rem + 1px);
   transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
   .list-group__item:not(:first-of-type) {
@@ -738,10 +743,10 @@ p {
   margin-bottom: 1rem; }
 
 .description-list__label {
-  font: normal normal 700 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: normal normal 700 0.75rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .description-list__content {
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .paint-chip {
   display: grid;
@@ -802,10 +807,10 @@ p {
   background-color: #37474F; }
 
 .paint-chip__title {
-  font: normal normal 400 0.875rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .paint-chip__values {
-  font: italic normal 400 0.75rem/1.5rem "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: italic normal 400 0.75rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #78909C; }
 
 footer {

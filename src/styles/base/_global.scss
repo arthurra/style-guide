@@ -6,10 +6,13 @@ html {
   font: $p;
   font-size: $base-font-size;
   text-rendering: optimizeLegibility;
-  -webkit-font-smooquarterg: subpixel-antialiased;
-  -moz-osx-font-smooquarterg: grayscale;
-  font-variant-ligatures: common-ligatures;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-ligatures: common-ligatures contextual;
+  font-variant-alternates: styleset(ss01) character-variant(cv08);
+  font-variant-numeric: diagonal-fractions;
   font-kerning: normal;
+  font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
   color: $text-color;
 }
 
