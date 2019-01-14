@@ -220,6 +220,7 @@ p {
 
 .button {
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   position: relative;
   height: 2rem;
@@ -442,6 +443,7 @@ p {
      -moz-appearance: none;
           appearance: none;
   display: block;
+  max-width: 100%;
   padding: 0 0.5rem;
   line-height: 2rem;
   font: normal normal 400 0.875rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;

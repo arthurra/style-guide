@@ -12,6 +12,7 @@ $small-button-height: $button-height * 0.75;
 
 .button {
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   position: relative;
   height: $button-height;
