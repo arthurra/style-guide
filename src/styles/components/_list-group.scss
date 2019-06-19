@@ -69,6 +69,10 @@ $list-group-item-badge-width: $list-group-item-height;
   color: #fff;
   background-color: $color-secondary;
   border-radius: $half-padding;
+
+  .list-group__item:hover & {
+    text-decoration: underline solid $color-secondary;
+  }
 }
 
 .list-group__item-icon {

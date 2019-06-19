@@ -726,6 +726,9 @@ p {
   color: #fff;
   background-color: #2c97de;
   border-radius: 0.5rem; }
+  .list-group__item:hover .list-group__item-badge {
+    -webkit-text-decoration: underline solid #2c97de;
+            text-decoration: underline solid #2c97de; }
 
 .list-group__item-icon {
   font-size: 87.5%;
