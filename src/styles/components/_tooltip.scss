@@ -4,7 +4,7 @@
   &:before {
     display: block;
     position: absolute;
-    top: ($quarter-padding * -1);
+    top: ($quarter-padding * -0.5);
     left: 50%;
     content: attr(aria-label);
     font: $label;
@@ -12,7 +12,7 @@
     line-height: 1;
     white-space: nowrap;
     color: #fff;
-    padding: ($quarter-padding * 0.25) $quarter-padding ($quarter-padding * 0.75);
+    padding: $quarter-padding;
     background-color: $black;
     border-radius: $border-radius;
     transform: translate(-50%, -100%);
@@ -24,7 +24,7 @@
 
   &:after {
     position: absolute;
-    top: $quarter-padding;
+    top: $quarter-padding * 1.5;
     left: 50%;
     content: "";
     width: 0;

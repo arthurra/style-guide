@@ -597,7 +597,7 @@ p {
   .has-tooltip:before {
     display: block;
     position: absolute;
-    top: -0.25rem;
+    top: -0.125rem;
     left: 50%;
     content: attr(aria-label);
     font: normal normal 500 0.75rem/1.5rem "Inter UI var alt", "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -605,7 +605,7 @@ p {
     line-height: 1;
     white-space: nowrap;
     color: #fff;
-    padding: 0.0625rem 0.25rem 0.1875rem;
+    padding: 0.25rem;
     background-color: #37474F;
     border-radius: 2px;
     -webkit-transform: translate(-50%, -100%);
@@ -616,7 +616,7 @@ p {
     transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
   .has-tooltip:after {
     position: absolute;
-    top: 0.25rem;
+    top: 0.375rem;
     left: 50%;
     content: "";
     width: 0;
