@@ -83,6 +83,7 @@ code {
   padding: ($quarter-padding / 2) $quarter-padding;
   border-radius: $border-radius;
   font-family: monospace;
+  font-feature-settings: normal;
   font-size: 87.5%;
   line-height: 1;
   white-space: pre;

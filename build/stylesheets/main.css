@@ -171,6 +171,8 @@ code {
   padding: 0.125rem 0.25rem;
   border-radius: 2px;
   font-family: monospace;
+  -webkit-font-feature-settings: normal;
+          font-feature-settings: normal;
   font-size: 87.5%;
   line-height: 1;
   white-space: pre;
