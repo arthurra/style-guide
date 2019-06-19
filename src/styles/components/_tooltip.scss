@@ -4,7 +4,7 @@
   &:before {
     display: block;
     position: absolute;
-    top: ($quarter-padding * -0.5);
+    top: ($quarter-padding * -1);
     left: 50%;
     content: attr(aria-label);
     font: $label;
@@ -24,7 +24,7 @@
 
   &:after {
     position: absolute;
-    top: $quarter-padding * 1.5;
+    top: $quarter-padding;
     left: 50%;
     content: "";
     width: 0;
