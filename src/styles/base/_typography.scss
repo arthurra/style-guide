@@ -12,7 +12,7 @@ h1 {
 h2 {
   font: $h2;
   margin-bottom: $padding;
-  padding-top: $padding * 3;
+  padding-top: $padding * 3.5;
   letter-spacing: -0.01em;
 }
 
@@ -25,8 +25,9 @@ h3 {
 
 h4 {
   font: $h4;
-  margin-bottom: $half-padding + $quarter-padding;
-  padding-top: $padding;
+  margin-top: -1px;
+  margin-bottom: $padding * 1.5;
+  padding-top: $padding * 1.5;
 }
 
 h5 {
