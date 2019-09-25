@@ -435,7 +435,7 @@ p {
   .form-group__input:focus, .form-group__input.form-group__input--focus {
     background-color: #fff;
     border-color: #2c97de;
-    box-shadow: 0 0 20px -5px #2c97de;
+    box-shadow: 0 0 0 2px rgba(44, 151, 222, 0.5);
     outline: none; }
   .form-group__input.disabled, .form-group__input[disabled] {
     color: #78909C;

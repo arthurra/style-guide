@@ -247,7 +247,7 @@ $help-text-height: $label-height;
   &.form-group__input--focus {
     background-color: #fff;
     border-color: $color-secondary;
-    box-shadow: 0 0 20px -5px $color-secondary;
+    box-shadow: 0 0 0 2px transparentize($color-secondary, 0.5);
     outline: none;
   }
 
