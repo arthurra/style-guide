@@ -44,7 +44,7 @@ $link-color: $color-secondary;
 
 $base-font-size: 16px;
 
-$font-family: 'Inter UI var alt', 'Inter UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family: 'Inter var alt', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $h1: normal normal 700 1.875rem/3.5rem $font-family;      // 30px/56px
 $h2: normal normal 400 1.25rem/3rem $font-family;         // 20px/48px
@@ -64,7 +64,7 @@ $padding: 1rem;
 $half-padding: $padding / 2;
 $quarter-padding: $half-padding / 2;
 
-$dark-border: 1px solid $dark-gray;
+$dark-border: 2px solid $dark-gray;
 $border: 1px solid $gray;
 $light-border: 1px solid $light-gray;
 $border-radius: 2px;
